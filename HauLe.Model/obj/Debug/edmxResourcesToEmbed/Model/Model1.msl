@@ -1,0 +1,3041 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HauLeModelStoreContainer" CdmEntityContainer="HauLeEntities">
+    <EntitySetMapping Name="Advertises">
+      <EntityTypeMapping TypeName="HauLeModel.Advertise">
+        <MappingFragment StoreEntitySet="Advertise">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="HauLeModel.Brand">
+        <MappingFragment StoreEntitySet="Brands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="HauLeModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Chitiethinhs">
+      <EntityTypeMapping TypeName="HauLeModel.Chitiethinh">
+        <MappingFragment StoreEntitySet="Chitiethinh">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="IDsanpham" ColumnName="IDsanpham" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Thumimg" ColumnName="Thumimg" />
+          <ScalarProperty Name="Thumsimg" ColumnName="Thumsimg" />
+          <ScalarProperty Name="ord" ColumnName="ord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Colors">
+      <EntityTypeMapping TypeName="HauLeModel.Color">
+        <MappingFragment StoreEntitySet="Colors">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Img" ColumnName="Img" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommentProducs">
+      <EntityTypeMapping TypeName="HauLeModel.CommentProduc">
+        <MappingFragment StoreEntitySet="CommentProduc">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="HauLeModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="AddressEn" ColumnName="AddressEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Configs">
+      <EntityTypeMapping TypeName="HauLeModel.Config">
+        <MappingFragment StoreEntitySet="Config">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Mail_Smtp" ColumnName="Mail_Smtp" />
+          <ScalarProperty Name="Mail_Port" ColumnName="Mail_Port" />
+          <ScalarProperty Name="Mail_Info" ColumnName="Mail_Info" />
+          <ScalarProperty Name="Mail_Noreply" ColumnName="Mail_Noreply" />
+          <ScalarProperty Name="Mail_Password" ColumnName="Mail_Password" />
+          <ScalarProperty Name="PlaceHead" ColumnName="PlaceHead" />
+          <ScalarProperty Name="PlaceBody" ColumnName="PlaceBody" />
+          <ScalarProperty Name="GoogleId" ColumnName="GoogleId" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="DeliveryTerms" ColumnName="DeliveryTerms" />
+          <ScalarProperty Name="PaymentTerms" ColumnName="PaymentTerms" />
+          <ScalarProperty Name="FreeShipping" ColumnName="FreeShipping" />
+          <ScalarProperty Name="Copyright" ColumnName="Copyright" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Helpsize" ColumnName="Helpsize" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="HauLeModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="CompanyEn" ColumnName="CompanyEn" />
+          <ScalarProperty Name="AddressEn" ColumnName="AddressEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTdonhangs">
+      <EntityTypeMapping TypeName="HauLeModel.CTdonhang">
+        <MappingFragment StoreEntitySet="CTdonhang">
+          <ScalarProperty Name="IdCTHD" ColumnName="IdCTHD" />
+          <ScalarProperty Name="IDhd" ColumnName="IDhd" />
+          <ScalarProperty Name="IDsanpham" ColumnName="IDsanpham" />
+          <ScalarProperty Name="Tensanpham" ColumnName="Tensanpham" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="Giaban" ColumnName="Giaban" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Mausac" ColumnName="Mausac" />
+          <ScalarProperty Name="Hinhanh" ColumnName="Hinhanh" />
+          <ScalarProperty Name="danhmucsanpham" ColumnName="danhmucsanpham" />
+          <ScalarProperty Name="chitietsanpham" ColumnName="chitietsanpham" />
+          <ScalarProperty Name="Giamthem" ColumnName="Giamthem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documents">
+      <EntityTypeMapping TypeName="HauLeModel.Document">
+        <MappingFragment StoreEntitySet="Document">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="infoEn" ColumnName="infoEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentTypes">
+      <EntityTypeMapping TypeName="HauLeModel.DocumentType">
+        <MappingFragment StoreEntitySet="DocumentType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Donhangs">
+      <EntityTypeMapping TypeName="HauLeModel.Donhang">
+        <MappingFragment StoreEntitySet="Donhang">
+          <ScalarProperty Name="IDhd" ColumnName="IDhd" />
+          <ScalarProperty Name="IDuser" ColumnName="IDuser" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="Hoten" ColumnName="Hoten" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="Tinh" ColumnName="Tinh" />
+          <ScalarProperty Name="Huyen" ColumnName="Huyen" />
+          <ScalarProperty Name="Xungho" ColumnName="Xungho" />
+          <ScalarProperty Name="Hinhthucthanhtoan" ColumnName="Hinhthucthanhtoan" />
+          <ScalarProperty Name="Goidichvu" ColumnName="Goidichvu" />
+          <ScalarProperty Name="Tongtienhang" ColumnName="Tongtienhang" />
+          <ScalarProperty Name="Thanhtoan" ColumnName="Thanhtoan" />
+          <ScalarProperty Name="ngaydathang" ColumnName="ngaydathang" />
+          <ScalarProperty Name="KH" ColumnName="KH" />
+          <ScalarProperty Name="Duyet" ColumnName="Duyet" />
+          <ScalarProperty Name="Khuyenmai" ColumnName="Khuyenmai" />
+          <ScalarProperty Name="Hinhthucgiaohang" ColumnName="Hinhthucgiaohang" />
+          <ScalarProperty Name="GhiChuKhac" ColumnName="GhiChuKhac" />
+          <ScalarProperty Name="Tiengiamgia" ColumnName="Tiengiamgia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailRegisters">
+      <EntityTypeMapping TypeName="HauLeModel.EmailRegister">
+        <MappingFragment StoreEntitySet="EmailRegisters">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupLibraries">
+      <EntityTypeMapping TypeName="HauLeModel.GroupLibrary">
+        <MappingFragment StoreEntitySet="GroupLibrary">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupMembers">
+      <EntityTypeMapping TypeName="HauLeModel.GroupMember">
+        <MappingFragment StoreEntitySet="GroupMember">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupMenuSanPhams">
+      <EntityTypeMapping TypeName="HauLeModel.GroupMenuSanPham">
+        <MappingFragment StoreEntitySet="GroupMenuSanPham">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Logogroup" ColumnName="Logogroup" />
+          <ScalarProperty Name="Mota" ColumnName="Mota" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="contentEn" ColumnName="contentEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupNews">
+      <EntityTypeMapping TypeName="HauLeModel.GroupNew">
+        <MappingFragment StoreEntitySet="GroupNews">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Logogroup" ColumnName="Logogroup" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="ImagesLogo" ColumnName="ImagesLogo" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="contentEn" ColumnName="contentEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupSupports">
+      <EntityTypeMapping TypeName="HauLeModel.GroupSupport">
+        <MappingFragment StoreEntitySet="GroupSupport">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Htmls">
+      <EntityTypeMapping TypeName="HauLeModel.Html">
+        <MappingFragment StoreEntitySet="Html">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="Html_content" ColumnName="Html_content" />
+          <ScalarProperty Name="TenEn" ColumnName="TenEn" />
+          <ScalarProperty Name="Html_contentEn" ColumnName="Html_contentEn" />
+          <ScalarProperty Name="images" ColumnName="images" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="information">
+      <EntityTypeMapping TypeName="HauLeModel.information">
+        <MappingFragment StoreEntitySet="information">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="HauLeModel.Language">
+        <MappingFragment StoreEntitySet="Language">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Folder" ColumnName="Folder" />
+          <ScalarProperty Name="Default" ColumnName="Default" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Libraries">
+      <EntityTypeMapping TypeName="HauLeModel.Library">
+        <MappingFragment StoreEntitySet="Library">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="GroupLibraryId" ColumnName="GroupLibraryId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="LibraryCatTag" ColumnName="LibraryCatTag" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="infoEn" ColumnName="infoEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContetnEn" ColumnName="ContetnEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Links">
+      <EntityTypeMapping TypeName="HauLeModel.Link">
+        <MappingFragment StoreEntitySet="Link">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Line1" ColumnName="Line1" />
+          <ScalarProperty Name="Line2" ColumnName="Line2" />
+          <ScalarProperty Name="Link1" ColumnName="Link1" />
+          <ScalarProperty Name="Link2" ColumnName="Link2" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="Line1En" ColumnName="Line1En" />
+          <ScalarProperty Name="Line2En" ColumnName="Line2En" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mautuychons">
+      <EntityTypeMapping TypeName="HauLeModel.mautuychon">
+        <MappingFragment StoreEntitySet="mautuychon">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tenmau" ColumnName="tenmau" />
+          <ScalarProperty Name="mamau" ColumnName="mamau" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="tenmauEn" ColumnName="tenmauEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="HauLeModel.Member">
+        <MappingFragment StoreEntitySet="Member">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="GroupMemberId" ColumnName="GroupMemberId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="Isplace" ColumnName="Isplace" />
+          <ScalarProperty Name="IsplaceEn" ColumnName="IsplaceEn" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="NoteEn" ColumnName="NoteEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewMenuSanPhams">
+      <EntityTypeMapping TypeName="HauLeModel.NewMenuSanPham">
+        <MappingFragment StoreEntitySet="NewMenuSanPham">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="IDthuonghieu" ColumnName="IDthuonghieu" />
+          <ScalarProperty Name="Mausac" ColumnName="Mausac" />
+          <ScalarProperty Name="Kichthuoc" ColumnName="Kichthuoc" />
+          <ScalarProperty Name="Giaban" ColumnName="Giaban" />
+          <ScalarProperty Name="Phantramkhuyenmai" ColumnName="Phantramkhuyenmai" />
+          <ScalarProperty Name="Donvi" ColumnName="Donvi" />
+          <ScalarProperty Name="Luotxem" ColumnName="Luotxem" />
+          <ScalarProperty Name="Luotdanhgia" ColumnName="Luotdanhgia" />
+          <ScalarProperty Name="Vat" ColumnName="Vat" />
+          <ScalarProperty Name="Khuyenmai" ColumnName="Khuyenmai" />
+          <ScalarProperty Name="Baohanh" ColumnName="Baohanh" />
+          <ScalarProperty Name="seri" ColumnName="seri" />
+          <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="GroupNewsCatTag" ColumnName="GroupNewsCatTag" />
+          <ScalarProperty Name="MenuSanPhamGoc" ColumnName="MenuSanPhamGoc" />
+          <ScalarProperty Name="MenuSanPhamCha" ColumnName="MenuSanPhamCha" />
+          <ScalarProperty Name="MenuSanPhamCha_con" ColumnName="MenuSanPhamCha_con" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Images5" ColumnName="Images5" />
+          <ScalarProperty Name="thongdiep" ColumnName="thongdiep" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+          <ScalarProperty Name="Soluongmua" ColumnName="Soluongmua" />
+          <ScalarProperty Name="khuyenmaiEn" ColumnName="khuyenmaiEn" />
+          <ScalarProperty Name="BaohanhEn" ColumnName="BaohanhEn" />
+          <ScalarProperty Name="DacDiemNoiBat" ColumnName="DacDiemNoiBat" />
+          <ScalarProperty Name="DacDiemNoiBatEn" ColumnName="DacDiemNoiBatEn" />
+          <ScalarProperty Name="ThongdiepEn" ColumnName="ThongdiepEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="HauLeModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="GroupNewsCatTag" ColumnName="GroupNewsCatTag" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Images5" ColumnName="Images5" />
+          <ScalarProperty Name="MenuSanPhamGoc" ColumnName="MenuSanPhamGoc" />
+          <ScalarProperty Name="MenuSanPhamCha" ColumnName="MenuSanPhamCha" />
+          <ScalarProperty Name="MenuSanPhamCha_con" ColumnName="MenuSanPhamCha_con" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+          <ScalarProperty Name="ord" ColumnName="ord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pageproducts">
+      <EntityTypeMapping TypeName="HauLeModel.Pageproduct">
+        <MappingFragment StoreEntitySet="Pageproduct">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="IDMenucon" ColumnName="IDMenucon" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+          <ScalarProperty Name="ImagesLogo" ColumnName="ImagesLogo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProColors">
+      <EntityTypeMapping TypeName="HauLeModel.ProColor">
+        <MappingFragment StoreEntitySet="ProColor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="HauLeModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="CatId" ColumnName="CatId" />
+          <ScalarProperty Name="CatTag" ColumnName="CatTag" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+          <ScalarProperty Name="PiceOld" ColumnName="PiceOld" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Codepro" ColumnName="Codepro" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="DateBegin" ColumnName="DateBegin" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProSizes">
+      <EntityTypeMapping TypeName="HauLeModel.ProSize">
+        <MappingFragment StoreEntitySet="ProSize">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provinces">
+      <EntityTypeMapping TypeName="HauLeModel.Province">
+        <MappingFragment StoreEntitySet="Province">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="quantity_purchased">
+      <EntityTypeMapping TypeName="HauLeModel.quantity_purchased">
+        <MappingFragment StoreEntitySet="quantity_purchased">
+          <ScalarProperty Name="Id_quantity" ColumnName="Id_quantity" />
+          <ScalarProperty Name="Sl_mua" ColumnName="Sl_mua" />
+          <ScalarProperty Name="Phan_tram_tang" ColumnName="Phan_tram_tang" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="service_charge">
+      <EntityTypeMapping TypeName="HauLeModel.service_charge">
+        <MappingFragment StoreEntitySet="service_charge">
+          <ScalarProperty Name="idservice" ColumnName="idservice" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gia" ColumnName="Gia" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shops">
+      <EntityTypeMapping TypeName="HauLeModel.Shop">
+        <MappingFragment StoreEntitySet="Shop">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sizes">
+      <EntityTypeMapping TypeName="HauLeModel.Size">
+        <MappingFragment StoreEntitySet="Sizes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Des" ColumnName="Des" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SlideShows">
+      <EntityTypeMapping TypeName="HauLeModel.SlideShow">
+        <MappingFragment StoreEntitySet="SlideShow">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supports">
+      <EntityTypeMapping TypeName="HauLeModel.Support">
+        <MappingFragment StoreEntitySet="Support">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Nick" ColumnName="Nick" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="GroupSupportId" ColumnName="GroupSupportId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="HauLeModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ThongKe">
+      <EntityTypeMapping TypeName="HauLeModel.TB_ThongKe">
+        <MappingFragment StoreEntitySet="TB_ThongKe">
+          <ScalarProperty Name="MaTB" ColumnName="MaTB" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="SoTruyCap" ColumnName="SoTruyCap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbBill_customers">
+      <EntityTypeMapping TypeName="HauLeModel.tbBill_customers">
+        <MappingFragment StoreEntitySet="tbBill_customers">
+          <ScalarProperty Name="billid" ColumnName="billid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="totalmoney" ColumnName="totalmoney" />
+          <ScalarProperty Name="idate" ColumnName="idate" />
+          <ScalarProperty Name="xdate" ColumnName="xdate" />
+          <ScalarProperty Name="request" ColumnName="request" />
+          <ScalarProperty Name="typepay" ColumnName="typepay" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="lang" ColumnName="lang" />
+          <ScalarProperty Name="show" ColumnName="show" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbBilldetails">
+      <EntityTypeMapping TypeName="HauLeModel.tbBilldetail">
+        <MappingFragment StoreEntitySet="tbBilldetail">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="bilid" ColumnName="bilid" />
+          <ScalarProperty Name="proid" ColumnName="proid" />
+          <ScalarProperty Name="sizeid" ColumnName="sizeid" />
+          <ScalarProperty Name="colorid" ColumnName="colorid" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="bilprice" ColumnName="bilprice" />
+          <ScalarProperty Name="bilpricevnd" ColumnName="bilpricevnd" />
+          <ScalarProperty Name="bilmoney" ColumnName="bilmoney" />
+          <ScalarProperty Name="billlocation" ColumnName="billlocation" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbCUSTOMERS">
+      <EntityTypeMapping TypeName="HauLeModel.tbCUSTOMER">
+        <MappingFragment StoreEntitySet="tbCUSTOMERS">
+          <ScalarProperty Name="iusid" ColumnName="iusid" />
+          <ScalarProperty Name="vusername" ColumnName="vusername" />
+          <ScalarProperty Name="vpassword" ColumnName="vpassword" />
+          <ScalarProperty Name="vcusname" ColumnName="vcusname" />
+          <ScalarProperty Name="dbirthday" ColumnName="dbirthday" />
+          <ScalarProperty Name="vprovince" ColumnName="vprovince" />
+          <ScalarProperty Name="vaddress" ColumnName="vaddress" />
+          <ScalarProperty Name="vphone" ColumnName="vphone" />
+          <ScalarProperty Name="vmobile" ColumnName="vmobile" />
+          <ScalarProperty Name="vemail" ColumnName="vemail" />
+          <ScalarProperty Name="dcreatedate" ColumnName="dcreatedate" />
+          <ScalarProperty Name="istatus" ColumnName="istatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDonvis">
+      <EntityTypeMapping TypeName="HauLeModel.tblDonvi">
+        <MappingFragment StoreEntitySet="tblDonvi">
+          <ScalarProperty Name="IDdonvi" ColumnName="IDdonvi" />
+          <ScalarProperty Name="Tendonvi" ColumnName="Tendonvi" />
+          <ScalarProperty Name="Hienthi" ColumnName="Hienthi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblKhoanggias">
+      <EntityTypeMapping TypeName="HauLeModel.tblKhoanggia">
+        <MappingFragment StoreEntitySet="tblKhoanggia">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Khoangdau" ColumnName="Khoangdau" />
+          <ScalarProperty Name="Khoangcuoi" ColumnName="Khoangcuoi" />
+          <ScalarProperty Name="Vitri" ColumnName="Vitri" />
+          <ScalarProperty Name="Hienthi" ColumnName="Hienthi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblKichthuocs">
+      <EntityTypeMapping TypeName="HauLeModel.tblKichthuoc">
+        <MappingFragment StoreEntitySet="tblKichthuoc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kichthuoc" ColumnName="Kichthuoc" />
+          <ScalarProperty Name="Vitri" ColumnName="Vitri" />
+          <ScalarProperty Name="Hienthi" ColumnName="Hienthi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMausacs">
+      <EntityTypeMapping TypeName="HauLeModel.tblMausac">
+        <MappingFragment StoreEntitySet="tblMausac">
+          <ScalarProperty Name="IDmau" ColumnName="IDmau" />
+          <ScalarProperty Name="Tenmau" ColumnName="Tenmau" />
+          <ScalarProperty Name="Hinhanh" ColumnName="Hinhanh" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="TenmauEn" ColumnName="TenmauEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblThuonghieux">
+      <EntityTypeMapping TypeName="HauLeModel.tblThuonghieu">
+        <MappingFragment StoreEntitySet="tblThuonghieu">
+          <ScalarProperty Name="IDthuonghieu" ColumnName="IDthuonghieu" />
+          <ScalarProperty Name="Tenthuonghieu" ColumnName="Tenthuonghieu" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Hienthi" ColumnName="Hienthi" />
+          <ScalarProperty Name="Vitri" ColumnName="Vitri" />
+          <ScalarProperty Name="Lienkettinh" ColumnName="Lienkettinh" />
+          <ScalarProperty Name="mota" ColumnName="mota" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbRecipients">
+      <EntityTypeMapping TypeName="HauLeModel.tbRecipient">
+        <MappingFragment StoreEntitySet="tbRecipient">
+          <ScalarProperty Name="ireid" ColumnName="ireid" />
+          <ScalarProperty Name="iusid" ColumnName="iusid" />
+          <ScalarProperty Name="vcusname" ColumnName="vcusname" />
+          <ScalarProperty Name="dbirthday" ColumnName="dbirthday" />
+          <ScalarProperty Name="vprovince" ColumnName="vprovince" />
+          <ScalarProperty Name="vaddress" ColumnName="vaddress" />
+          <ScalarProperty Name="vphone" ColumnName="vphone" />
+          <ScalarProperty Name="vmobile" ColumnName="vmobile" />
+          <ScalarProperty Name="vemail" ColumnName="vemail" />
+          <ScalarProperty Name="dcreatedate" ColumnName="dcreatedate" />
+          <ScalarProperty Name="istatus" ColumnName="istatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Thanhviens">
+      <EntityTypeMapping TypeName="HauLeModel.Thanhvien">
+        <MappingFragment StoreEntitySet="Thanhvien">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Taikhoan" ColumnName="Taikhoan" />
+          <ScalarProperty Name="Matkhau" ColumnName="Matkhau" />
+          <ScalarProperty Name="Hoten" ColumnName="Hoten" />
+          <ScalarProperty Name="Ngaysinh" ColumnName="Ngaysinh" />
+          <ScalarProperty Name="Gioitinh" ColumnName="Gioitinh" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Actice" ColumnName="Actice" />
+          <ScalarProperty Name="thutu" ColumnName="thutu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Url_thanhtoan">
+      <EntityTypeMapping TypeName="HauLeModel.Url_thanhtoan">
+        <MappingFragment StoreEntitySet="Url_thanhtoan">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="vitri" ColumnName="vitri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="HauLeModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pages">
+      <EntityTypeMapping TypeName="HauLeModel.Page">
+        <MappingFragment StoreEntitySet="Page">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="IDMenucon" ColumnName="IDMenucon" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Asp_Excell_GetBy_100DHMoiNhat" FunctionName="HauLeModel.Store.Asp_Excell_GetBy_100DHMoiNhat">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.Asp_Excell_GetBy_100DHMoiNhat_Result">
+          <ScalarProperty Name="ID_Đơn_Hàng" ColumnName="ID Đơn Hàng" />
+          <ScalarProperty Name="Xưng_Hô" ColumnName="Xưng Hô" />
+          <ScalarProperty Name="Họ_Tên" ColumnName="Họ Tên" />
+          <ScalarProperty Name="Ngày_đặt_hàng" ColumnName="Ngày đặt hàng" />
+          <ScalarProperty Name="Số_Điện_Thoại" ColumnName="Số Điện Thoại" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Địa_Chỉ" ColumnName="Địa Chỉ" />
+          <ScalarProperty Name="Ghi_Chú_Khác" ColumnName="Ghi Chú Khác" />
+          <ScalarProperty Name="Tên_Sản_Phẩm" ColumnName="Tên Sản Phẩm" />
+          <ScalarProperty Name="Số_Lượng" ColumnName="Số Lượng" />
+          <ScalarProperty Name="Giá_Bán" ColumnName="Giá Bán" />
+          <ScalarProperty Name="Phí_Dịch_Vụ" ColumnName="Phí Dịch Vụ" />
+          <ScalarProperty Name="Tiền_Giảm_Nhập_Mã_Giảm" ColumnName="Tiền Giảm Nhập Mã Giảm" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Màu_Sắc" ColumnName="Màu Sắc" />
+          <ScalarProperty Name="Giảm_Thêm" ColumnName="Giảm Thêm" />
+          <ScalarProperty Name="Thành_Tiền_Chưa_Phí_DV" ColumnName="Thành Tiền Chưa Phí DV" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Asp_Excell_GetBy_10DHMoiNhat" FunctionName="HauLeModel.Store.Asp_Excell_GetBy_10DHMoiNhat">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.Asp_Excell_GetBy_10DHMoiNhat_Result">
+          <ScalarProperty Name="ID_Đơn_Hàng" ColumnName="ID Đơn Hàng" />
+          <ScalarProperty Name="Xưng_Hô" ColumnName="Xưng Hô" />
+          <ScalarProperty Name="Họ_Tên" ColumnName="Họ Tên" />
+          <ScalarProperty Name="Ngày_đặt_hàng" ColumnName="Ngày đặt hàng" />
+          <ScalarProperty Name="Số_Điện_Thoại" ColumnName="Số Điện Thoại" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Địa_Chỉ" ColumnName="Địa Chỉ" />
+          <ScalarProperty Name="Ghi_Chú_Khác" ColumnName="Ghi Chú Khác" />
+          <ScalarProperty Name="Tên_Sản_Phẩm" ColumnName="Tên Sản Phẩm" />
+          <ScalarProperty Name="Số_Lượng" ColumnName="Số Lượng" />
+          <ScalarProperty Name="Giá_Bán" ColumnName="Giá Bán" />
+          <ScalarProperty Name="Phí_Dịch_Vụ" ColumnName="Phí Dịch Vụ" />
+          <ScalarProperty Name="Tiền_Giảm_Nhập_Mã_Giảm" ColumnName="Tiền Giảm Nhập Mã Giảm" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Màu_Sắc" ColumnName="Màu Sắc" />
+          <ScalarProperty Name="Giảm_Thêm" ColumnName="Giảm Thêm" />
+          <ScalarProperty Name="Thành_Tiền_Chưa_Phí_DV" ColumnName="Thành Tiền Chưa Phí DV" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Asp_Excell_GetBy_50DHMoiNhat" FunctionName="HauLeModel.Store.Asp_Excell_GetBy_50DHMoiNhat">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.Asp_Excell_GetBy_50DHMoiNhat_Result">
+          <ScalarProperty Name="ID_Đơn_Hàng" ColumnName="ID Đơn Hàng" />
+          <ScalarProperty Name="Xưng_Hô" ColumnName="Xưng Hô" />
+          <ScalarProperty Name="Họ_Tên" ColumnName="Họ Tên" />
+          <ScalarProperty Name="Ngày_đặt_hàng" ColumnName="Ngày đặt hàng" />
+          <ScalarProperty Name="Số_Điện_Thoại" ColumnName="Số Điện Thoại" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Địa_Chỉ" ColumnName="Địa Chỉ" />
+          <ScalarProperty Name="Ghi_Chú_Khác" ColumnName="Ghi Chú Khác" />
+          <ScalarProperty Name="Tên_Sản_Phẩm" ColumnName="Tên Sản Phẩm" />
+          <ScalarProperty Name="Số_Lượng" ColumnName="Số Lượng" />
+          <ScalarProperty Name="Giá_Bán" ColumnName="Giá Bán" />
+          <ScalarProperty Name="Phí_Dịch_Vụ" ColumnName="Phí Dịch Vụ" />
+          <ScalarProperty Name="Tiền_Giảm_Nhập_Mã_Giảm" ColumnName="Tiền Giảm Nhập Mã Giảm" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Màu_Sắc" ColumnName="Màu Sắc" />
+          <ScalarProperty Name="Giảm_Thêm" ColumnName="Giảm Thêm" />
+          <ScalarProperty Name="Thành_Tiền_Chưa_Phí_DV" ColumnName="Thành Tiền Chưa Phí DV" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Asp_Excell_GetBy_5DHMoiNhat" FunctionName="HauLeModel.Store.Asp_Excell_GetBy_5DHMoiNhat">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.Asp_Excell_GetBy_5DHMoiNhat_Result">
+          <ScalarProperty Name="ID_Đơn_Hàng" ColumnName="ID Đơn Hàng" />
+          <ScalarProperty Name="Xưng_Hô" ColumnName="Xưng Hô" />
+          <ScalarProperty Name="Họ_Tên" ColumnName="Họ Tên" />
+          <ScalarProperty Name="Ngày_đặt_hàng" ColumnName="Ngày đặt hàng" />
+          <ScalarProperty Name="Số_Điện_Thoại" ColumnName="Số Điện Thoại" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Địa_Chỉ" ColumnName="Địa Chỉ" />
+          <ScalarProperty Name="Ghi_Chú_Khác" ColumnName="Ghi Chú Khác" />
+          <ScalarProperty Name="Tên_Sản_Phẩm" ColumnName="Tên Sản Phẩm" />
+          <ScalarProperty Name="Số_Lượng" ColumnName="Số Lượng" />
+          <ScalarProperty Name="Giá_Bán" ColumnName="Giá Bán" />
+          <ScalarProperty Name="Phí_Dịch_Vụ" ColumnName="Phí Dịch Vụ" />
+          <ScalarProperty Name="Tiền_Giảm_Nhập_Mã_Giảm" ColumnName="Tiền Giảm Nhập Mã Giảm" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Màu_Sắc" ColumnName="Màu Sắc" />
+          <ScalarProperty Name="Giảm_Thêm" ColumnName="Giảm Thêm" />
+          <ScalarProperty Name="Thành_Tiền_Chưa_Phí_DV" ColumnName="Thành Tiền Chưa Phí DV" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Asp_Excell_GetBy_Chuaduyet" FunctionName="HauLeModel.Store.Asp_Excell_GetBy_Chuaduyet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.Asp_Excell_GetBy_Chuaduyet_Result">
+          <ScalarProperty Name="ID_Đơn_Hàng" ColumnName="ID Đơn Hàng" />
+          <ScalarProperty Name="Xưng_Hô" ColumnName="Xưng Hô" />
+          <ScalarProperty Name="Họ_Tên" ColumnName="Họ Tên" />
+          <ScalarProperty Name="Ngày_đặt_hàng" ColumnName="Ngày đặt hàng" />
+          <ScalarProperty Name="Số_Điện_Thoại" ColumnName="Số Điện Thoại" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Địa_Chỉ" ColumnName="Địa Chỉ" />
+          <ScalarProperty Name="Ghi_Chú_Khác" ColumnName="Ghi Chú Khác" />
+          <ScalarProperty Name="Tên_Sản_Phẩm" ColumnName="Tên Sản Phẩm" />
+          <ScalarProperty Name="Số_Lượng" ColumnName="Số Lượng" />
+          <ScalarProperty Name="Giá_Bán" ColumnName="Giá Bán" />
+          <ScalarProperty Name="Phí_Dịch_Vụ" ColumnName="Phí Dịch Vụ" />
+          <ScalarProperty Name="Tiền_Giảm_Nhập_Mã_Giảm" ColumnName="Tiền Giảm Nhập Mã Giảm" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Màu_Sắc" ColumnName="Màu Sắc" />
+          <ScalarProperty Name="Giảm_Thêm" ColumnName="Giảm Thêm" />
+          <ScalarProperty Name="Thành_Tiền_Chưa_Phí_DV" ColumnName="Thành Tiền Chưa Phí DV" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Asp_Excell_GetBy_duyet" FunctionName="HauLeModel.Store.Asp_Excell_GetBy_duyet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.Asp_Excell_GetBy_duyet_Result">
+          <ScalarProperty Name="ID_Đơn_Hàng" ColumnName="ID Đơn Hàng" />
+          <ScalarProperty Name="Xưng_Hô" ColumnName="Xưng Hô" />
+          <ScalarProperty Name="Họ_Tên" ColumnName="Họ Tên" />
+          <ScalarProperty Name="Ngày_đặt_hàng" ColumnName="Ngày đặt hàng" />
+          <ScalarProperty Name="Số_Điện_Thoại" ColumnName="Số Điện Thoại" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Địa_Chỉ" ColumnName="Địa Chỉ" />
+          <ScalarProperty Name="Ghi_Chú_Khác" ColumnName="Ghi Chú Khác" />
+          <ScalarProperty Name="Tên_Sản_Phẩm" ColumnName="Tên Sản Phẩm" />
+          <ScalarProperty Name="Số_Lượng" ColumnName="Số Lượng" />
+          <ScalarProperty Name="Giá_Bán" ColumnName="Giá Bán" />
+          <ScalarProperty Name="Phí_Dịch_Vụ" ColumnName="Phí Dịch Vụ" />
+          <ScalarProperty Name="Tiền_Giảm_Nhập_Mã_Giảm" ColumnName="Tiền Giảm Nhập Mã Giảm" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Màu_Sắc" ColumnName="Màu Sắc" />
+          <ScalarProperty Name="Giảm_Thêm" ColumnName="Giảm Thêm" />
+          <ScalarProperty Name="Thành_Tiền_Chưa_Phí_DV" ColumnName="Thành Tiền Chưa Phí DV" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Asp_Excell_GetBy_Today" FunctionName="HauLeModel.Store.Asp_Excell_GetBy_Today">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.Asp_Excell_GetBy_Today_Result">
+          <ScalarProperty Name="ID_Đơn_Hàng" ColumnName="ID Đơn Hàng" />
+          <ScalarProperty Name="Xưng_Hô" ColumnName="Xưng Hô" />
+          <ScalarProperty Name="Họ_Tên" ColumnName="Họ Tên" />
+          <ScalarProperty Name="Ngày_đặt_hàng" ColumnName="Ngày đặt hàng" />
+          <ScalarProperty Name="Số_Điện_Thoại" ColumnName="Số Điện Thoại" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Địa_Chỉ" ColumnName="Địa Chỉ" />
+          <ScalarProperty Name="Ghi_Chú_Khác" ColumnName="Ghi Chú Khác" />
+          <ScalarProperty Name="Tên_Sản_Phẩm" ColumnName="Tên Sản Phẩm" />
+          <ScalarProperty Name="Số_Lượng" ColumnName="Số Lượng" />
+          <ScalarProperty Name="Giá_Bán" ColumnName="Giá Bán" />
+          <ScalarProperty Name="Phí_Dịch_Vụ" ColumnName="Phí Dịch Vụ" />
+          <ScalarProperty Name="Tiền_Giảm_Nhập_Mã_Giảm" ColumnName="Tiền Giảm Nhập Mã Giảm" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Màu_Sắc" ColumnName="Màu Sắc" />
+          <ScalarProperty Name="Giảm_Thêm" ColumnName="Giảm Thêm" />
+          <ScalarProperty Name="Thành_Tiền_Chưa_Phí_DV" ColumnName="Thành Tiền Chưa Phí DV" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Asp_Excell_GetByAll" FunctionName="HauLeModel.Store.Asp_Excell_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.Asp_Excell_GetByAll_Result">
+          <ScalarProperty Name="ID_Đơn_Hàng" ColumnName="ID Đơn Hàng" />
+          <ScalarProperty Name="Xưng_Hô" ColumnName="Xưng Hô" />
+          <ScalarProperty Name="Họ_Tên" ColumnName="Họ Tên" />
+          <ScalarProperty Name="Ngày_đặt_hàng" ColumnName="Ngày đặt hàng" />
+          <ScalarProperty Name="Số_Điện_Thoại" ColumnName="Số Điện Thoại" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Địa_Chỉ" ColumnName="Địa Chỉ" />
+          <ScalarProperty Name="Ghi_Chú_Khác" ColumnName="Ghi Chú Khác" />
+          <ScalarProperty Name="Tên_Sản_Phẩm" ColumnName="Tên Sản Phẩm" />
+          <ScalarProperty Name="Số_Lượng" ColumnName="Số Lượng" />
+          <ScalarProperty Name="Giá_Bán" ColumnName="Giá Bán" />
+          <ScalarProperty Name="Phí_Dịch_Vụ" ColumnName="Phí Dịch Vụ" />
+          <ScalarProperty Name="Tiền_Giảm_Nhập_Mã_Giảm" ColumnName="Tiền Giảm Nhập Mã Giảm" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Màu_Sắc" ColumnName="Màu Sắc" />
+          <ScalarProperty Name="Giảm_Thêm" ColumnName="Giảm Thêm" />
+          <ScalarProperty Name="Thành_Tiền_Chưa_Phí_DV" ColumnName="Thành Tiền Chưa Phí DV" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Donhang_Max" FunctionName="HauLeModel.Store.Donhang_Max" />
+    <FunctionImportMapping FunctionImportName="Sanpham_Max" FunctionName="HauLeModel.Store.Sanpham_Max" />
+    <FunctionImportMapping FunctionImportName="sp_Advertise_Delete" FunctionName="HauLeModel.Store.sp_Advertise_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Advertise_GetByAll" FunctionName="HauLeModel.Store.sp_Advertise_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Advertise_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Advertise_GetById" FunctionName="HauLeModel.Store.sp_Advertise_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Advertise_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Advertise_GetByTop" FunctionName="HauLeModel.Store.sp_Advertise_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Advertise_Insert" FunctionName="HauLeModel.Store.sp_Advertise_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Advertise_Paging" FunctionName="HauLeModel.Store.sp_Advertise_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Advertise_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Advertise_Update" FunctionName="HauLeModel.Store.sp_Advertise_Update" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="HauLeModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_Brands_Delete" FunctionName="HauLeModel.Store.sp_Brands_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Brands_GetByAll" FunctionName="HauLeModel.Store.sp_Brands_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Brands_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Brands_GetById" FunctionName="HauLeModel.Store.sp_Brands_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Brands_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Brands_GetByTop" FunctionName="HauLeModel.Store.sp_Brands_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Brands_Insert" FunctionName="HauLeModel.Store.sp_Brands_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Brands_Paging" FunctionName="HauLeModel.Store.sp_Brands_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Brands_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Brands_Update" FunctionName="HauLeModel.Store.sp_Brands_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Category_Delete" FunctionName="HauLeModel.Store.sp_Category_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Category_GetByAll" FunctionName="HauLeModel.Store.sp_Category_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Category_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Category_GetByCategory" FunctionName="HauLeModel.Store.sp_Category_GetByCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Category_GetByCategory_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Category_GetById" FunctionName="HauLeModel.Store.sp_Category_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Category_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Category_GetByLevel" FunctionName="HauLeModel.Store.sp_Category_GetByLevel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Category_GetByLevel_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Category_GetByTop" FunctionName="HauLeModel.Store.sp_Category_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Category_Insert" FunctionName="HauLeModel.Store.sp_Category_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Category_Paging" FunctionName="HauLeModel.Store.sp_Category_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Category_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Category_Update" FunctionName="HauLeModel.Store.sp_Category_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Category_Update_Ord" FunctionName="HauLeModel.Store.sp_Category_Update_Ord" />
+    <FunctionImportMapping FunctionImportName="sp_Colors_Delete" FunctionName="HauLeModel.Store.sp_Colors_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Colors_GetByAll" FunctionName="HauLeModel.Store.sp_Colors_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Colors_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Img" ColumnName="Img" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Colors_GetById" FunctionName="HauLeModel.Store.sp_Colors_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Colors_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Img" ColumnName="Img" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Colors_GetByTop" FunctionName="HauLeModel.Store.sp_Colors_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Colors_Insert" FunctionName="HauLeModel.Store.sp_Colors_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Colors_Paging" FunctionName="HauLeModel.Store.sp_Colors_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Colors_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Img" ColumnName="Img" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Colors_Update" FunctionName="HauLeModel.Store.sp_Colors_Update" />
+    <FunctionImportMapping FunctionImportName="sp_CommentProduc_Delete" FunctionName="HauLeModel.Store.sp_CommentProduc_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_CommentProduc_GetByAll" FunctionName="HauLeModel.Store.sp_CommentProduc_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_CommentProduc_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_CommentProduc_GetById" FunctionName="HauLeModel.Store.sp_CommentProduc_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_CommentProduc_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_CommentProduc_GetByTop" FunctionName="HauLeModel.Store.sp_CommentProduc_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_CommentProduc_Insert" FunctionName="HauLeModel.Store.sp_CommentProduc_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_CommentProduc_Paging" FunctionName="HauLeModel.Store.sp_CommentProduc_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_CommentProduc_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_CommentProduc_Update" FunctionName="HauLeModel.Store.sp_CommentProduc_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Company_Delete" FunctionName="HauLeModel.Store.sp_Company_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Company_GetByAll" FunctionName="HauLeModel.Store.sp_Company_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Company_GetByAll_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="AddressEn" ColumnName="AddressEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Company_GetById" FunctionName="HauLeModel.Store.sp_Company_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Company_GetById_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="AddressEn" ColumnName="AddressEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Company_GetByTop" FunctionName="HauLeModel.Store.sp_Company_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Company_Insert" FunctionName="HauLeModel.Store.sp_Company_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Company_Paging" FunctionName="HauLeModel.Store.sp_Company_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Company_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="AddressEn" ColumnName="AddressEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Company_Update" FunctionName="HauLeModel.Store.sp_Company_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Config_Delete" FunctionName="HauLeModel.Store.sp_Config_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Config_GetByAll" FunctionName="HauLeModel.Store.sp_Config_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Config_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Mail_Smtp" ColumnName="Mail_Smtp" />
+          <ScalarProperty Name="Mail_Port" ColumnName="Mail_Port" />
+          <ScalarProperty Name="Mail_Info" ColumnName="Mail_Info" />
+          <ScalarProperty Name="Mail_Noreply" ColumnName="Mail_Noreply" />
+          <ScalarProperty Name="Mail_Password" ColumnName="Mail_Password" />
+          <ScalarProperty Name="PlaceHead" ColumnName="PlaceHead" />
+          <ScalarProperty Name="PlaceBody" ColumnName="PlaceBody" />
+          <ScalarProperty Name="GoogleId" ColumnName="GoogleId" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="DeliveryTerms" ColumnName="DeliveryTerms" />
+          <ScalarProperty Name="PaymentTerms" ColumnName="PaymentTerms" />
+          <ScalarProperty Name="FreeShipping" ColumnName="FreeShipping" />
+          <ScalarProperty Name="Copyright" ColumnName="Copyright" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Helpsize" ColumnName="Helpsize" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Config_GetById" FunctionName="HauLeModel.Store.sp_Config_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Config_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Mail_Smtp" ColumnName="Mail_Smtp" />
+          <ScalarProperty Name="Mail_Port" ColumnName="Mail_Port" />
+          <ScalarProperty Name="Mail_Info" ColumnName="Mail_Info" />
+          <ScalarProperty Name="Mail_Noreply" ColumnName="Mail_Noreply" />
+          <ScalarProperty Name="Mail_Password" ColumnName="Mail_Password" />
+          <ScalarProperty Name="PlaceHead" ColumnName="PlaceHead" />
+          <ScalarProperty Name="PlaceBody" ColumnName="PlaceBody" />
+          <ScalarProperty Name="GoogleId" ColumnName="GoogleId" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="DeliveryTerms" ColumnName="DeliveryTerms" />
+          <ScalarProperty Name="PaymentTerms" ColumnName="PaymentTerms" />
+          <ScalarProperty Name="FreeShipping" ColumnName="FreeShipping" />
+          <ScalarProperty Name="Copyright" ColumnName="Copyright" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Helpsize" ColumnName="Helpsize" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Config_GetByTop" FunctionName="HauLeModel.Store.sp_Config_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Config_Insert" FunctionName="HauLeModel.Store.sp_Config_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Config_Paging" FunctionName="HauLeModel.Store.sp_Config_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Config_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Mail_Smtp" ColumnName="Mail_Smtp" />
+          <ScalarProperty Name="Mail_Port" ColumnName="Mail_Port" />
+          <ScalarProperty Name="Mail_Info" ColumnName="Mail_Info" />
+          <ScalarProperty Name="Mail_Noreply" ColumnName="Mail_Noreply" />
+          <ScalarProperty Name="Mail_Password" ColumnName="Mail_Password" />
+          <ScalarProperty Name="PlaceHead" ColumnName="PlaceHead" />
+          <ScalarProperty Name="PlaceBody" ColumnName="PlaceBody" />
+          <ScalarProperty Name="GoogleId" ColumnName="GoogleId" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="DeliveryTerms" ColumnName="DeliveryTerms" />
+          <ScalarProperty Name="PaymentTerms" ColumnName="PaymentTerms" />
+          <ScalarProperty Name="FreeShipping" ColumnName="FreeShipping" />
+          <ScalarProperty Name="Copyright" ColumnName="Copyright" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Helpsize" ColumnName="Helpsize" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Config_Update" FunctionName="HauLeModel.Store.sp_Config_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Contact_Delete" FunctionName="HauLeModel.Store.sp_Contact_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Contact_GetByAll" FunctionName="HauLeModel.Store.sp_Contact_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Contact_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="CompanyEn" ColumnName="CompanyEn" />
+          <ScalarProperty Name="AddressEn" ColumnName="AddressEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Contact_GetById" FunctionName="HauLeModel.Store.sp_Contact_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Contact_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="CompanyEn" ColumnName="CompanyEn" />
+          <ScalarProperty Name="AddressEn" ColumnName="AddressEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Contact_GetByTop" FunctionName="HauLeModel.Store.sp_Contact_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Contact_Insert" FunctionName="HauLeModel.Store.sp_Contact_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Contact_Paging" FunctionName="HauLeModel.Store.sp_Contact_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Contact_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="CompanyEn" ColumnName="CompanyEn" />
+          <ScalarProperty Name="AddressEn" ColumnName="AddressEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Contact_Update" FunctionName="HauLeModel.Store.sp_Contact_Update" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="HauLeModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_data_backup" FunctionName="HauLeModel.Store.sp_data_backup" />
+    <FunctionImportMapping FunctionImportName="sp_Document_Delete" FunctionName="HauLeModel.Store.sp_Document_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Document_GetByAll" FunctionName="HauLeModel.Store.sp_Document_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Document_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="infoEn" ColumnName="infoEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Document_GetById" FunctionName="HauLeModel.Store.sp_Document_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Document_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="infoEn" ColumnName="infoEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Document_GetByTop" FunctionName="HauLeModel.Store.sp_Document_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Document_Insert" FunctionName="HauLeModel.Store.sp_Document_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Document_Paging" FunctionName="HauLeModel.Store.sp_Document_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Document_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="infoEn" ColumnName="infoEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Document_Update" FunctionName="HauLeModel.Store.sp_Document_Update" />
+    <FunctionImportMapping FunctionImportName="sp_DocumentType_Delete" FunctionName="HauLeModel.Store.sp_DocumentType_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_DocumentType_GetByAll" FunctionName="HauLeModel.Store.sp_DocumentType_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_DocumentType_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_DocumentType_GetById" FunctionName="HauLeModel.Store.sp_DocumentType_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_DocumentType_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_DocumentType_GetByTop" FunctionName="HauLeModel.Store.sp_DocumentType_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_DocumentType_Insert" FunctionName="HauLeModel.Store.sp_DocumentType_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_DocumentType_Update" FunctionName="HauLeModel.Store.sp_DocumentType_Update" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="HauLeModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_EmailRegisters_Delete" FunctionName="HauLeModel.Store.sp_EmailRegisters_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_EmailRegisters_GetByAll" FunctionName="HauLeModel.Store.sp_EmailRegisters_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_EmailRegisters_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_EmailRegisters_GetById" FunctionName="HauLeModel.Store.sp_EmailRegisters_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_EmailRegisters_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_EmailRegisters_GetByTop" FunctionName="HauLeModel.Store.sp_EmailRegisters_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_EmailRegisters_Insert" FunctionName="HauLeModel.Store.sp_EmailRegisters_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_EmailRegisters_Paging" FunctionName="HauLeModel.Store.sp_EmailRegisters_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_EmailRegisters_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_EmailRegisters_Update" FunctionName="HauLeModel.Store.sp_EmailRegisters_Update" />
+    <FunctionImportMapping FunctionImportName="sp_GroupLibrary_Delete" FunctionName="HauLeModel.Store.sp_GroupLibrary_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_GroupLibrary_GetByAll" FunctionName="HauLeModel.Store.sp_GroupLibrary_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupLibrary_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupLibrary_GetById" FunctionName="HauLeModel.Store.sp_GroupLibrary_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupLibrary_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupLibrary_GetByLevel" FunctionName="HauLeModel.Store.sp_GroupLibrary_GetByLevel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupLibrary_GetByLevel_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupLibrary_GetByTop" FunctionName="HauLeModel.Store.sp_GroupLibrary_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_GroupLibrary_Insert" FunctionName="HauLeModel.Store.sp_GroupLibrary_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_GroupLibrary_Paging" FunctionName="HauLeModel.Store.sp_GroupLibrary_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupLibrary_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupLibrary_Update" FunctionName="HauLeModel.Store.sp_GroupLibrary_Update" />
+    <FunctionImportMapping FunctionImportName="sp_GroupMember_Delete" FunctionName="HauLeModel.Store.sp_GroupMember_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_GroupMember_GetByAll" FunctionName="HauLeModel.Store.sp_GroupMember_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupMember_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupMember_GetById" FunctionName="HauLeModel.Store.sp_GroupMember_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupMember_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupMember_GetByTop" FunctionName="HauLeModel.Store.sp_GroupMember_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_GroupMember_Insert" FunctionName="HauLeModel.Store.sp_GroupMember_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_GroupMember_Update" FunctionName="HauLeModel.Store.sp_GroupMember_Update" />
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_Delete" FunctionName="HauLeModel.Store.sp_GroupNews_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_GetByAll" FunctionName="HauLeModel.Store.sp_GroupNews_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupNews_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Logogroup" ColumnName="Logogroup" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="ImagesLogo" ColumnName="ImagesLogo" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="contentEn" ColumnName="contentEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_GetById" FunctionName="HauLeModel.Store.sp_GroupNews_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupNews_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Logogroup" ColumnName="Logogroup" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="ImagesLogo" ColumnName="ImagesLogo" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="contentEn" ColumnName="contentEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_GetByTop" FunctionName="HauLeModel.Store.sp_GroupNews_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_Insert" FunctionName="HauLeModel.Store.sp_GroupNews_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_Paging" FunctionName="HauLeModel.Store.sp_GroupNews_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupNews_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Logogroup" ColumnName="Logogroup" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="ImagesLogo" ColumnName="ImagesLogo" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="contentEn" ColumnName="contentEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupNews_Update" FunctionName="HauLeModel.Store.sp_GroupNews_Update" />
+    <FunctionImportMapping FunctionImportName="sp_GroupSupport_Delete" FunctionName="HauLeModel.Store.sp_GroupSupport_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_GroupSupport_GetByAll" FunctionName="HauLeModel.Store.sp_GroupSupport_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupSupport_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupSupport_GetById" FunctionName="HauLeModel.Store.sp_GroupSupport_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupSupport_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupSupport_GetByTop" FunctionName="HauLeModel.Store.sp_GroupSupport_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_GroupSupport_Insert" FunctionName="HauLeModel.Store.sp_GroupSupport_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_GroupSupport_Paging" FunctionName="HauLeModel.Store.sp_GroupSupport_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_GroupSupport_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GroupSupport_Update" FunctionName="HauLeModel.Store.sp_GroupSupport_Update" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="HauLeModel.Store.sp_helpdiagramdefinition" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="HauLeModel.Store.sp_helpdiagrams" />
+    <FunctionImportMapping FunctionImportName="sp_Language_Delete" FunctionName="HauLeModel.Store.sp_Language_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Language_GetByAll" FunctionName="HauLeModel.Store.sp_Language_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Language_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Folder" ColumnName="Folder" />
+          <ScalarProperty Name="Default" ColumnName="Default" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Language_GetById" FunctionName="HauLeModel.Store.sp_Language_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Language_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Folder" ColumnName="Folder" />
+          <ScalarProperty Name="Default" ColumnName="Default" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Language_GetByTop" FunctionName="HauLeModel.Store.sp_Language_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Language_Insert" FunctionName="HauLeModel.Store.sp_Language_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Language_Paging" FunctionName="HauLeModel.Store.sp_Language_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Language_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Folder" ColumnName="Folder" />
+          <ScalarProperty Name="Default" ColumnName="Default" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Language_Update" FunctionName="HauLeModel.Store.sp_Language_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Library_Delete" FunctionName="HauLeModel.Store.sp_Library_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Library_GetByAll" FunctionName="HauLeModel.Store.sp_Library_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Library_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="GroupLibraryId" ColumnName="GroupLibraryId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="LibraryCatTag" ColumnName="LibraryCatTag" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="infoEn" ColumnName="infoEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContetnEn" ColumnName="ContetnEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Library_GetById" FunctionName="HauLeModel.Store.sp_Library_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Library_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="GroupLibraryId" ColumnName="GroupLibraryId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="LibraryCatTag" ColumnName="LibraryCatTag" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="infoEn" ColumnName="infoEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContetnEn" ColumnName="ContetnEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Library_GetByTop" FunctionName="HauLeModel.Store.sp_Library_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Library_Insert" FunctionName="HauLeModel.Store.sp_Library_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Library_Paging" FunctionName="HauLeModel.Store.sp_Library_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Library_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="File" ColumnName="File" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="GroupLibraryId" ColumnName="GroupLibraryId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="LibraryCatTag" ColumnName="LibraryCatTag" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="infoEn" ColumnName="infoEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContetnEn" ColumnName="ContetnEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Library_Update" FunctionName="HauLeModel.Store.sp_Library_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Link_Delete" FunctionName="HauLeModel.Store.sp_Link_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Link_GetByAll" FunctionName="HauLeModel.Store.sp_Link_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Link_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Line1" ColumnName="Line1" />
+          <ScalarProperty Name="Line2" ColumnName="Line2" />
+          <ScalarProperty Name="Link1" ColumnName="Link1" />
+          <ScalarProperty Name="Link2" ColumnName="Link2" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="Line1En" ColumnName="Line1En" />
+          <ScalarProperty Name="Line2En" ColumnName="Line2En" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Link_GetById" FunctionName="HauLeModel.Store.sp_Link_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Link_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Line1" ColumnName="Line1" />
+          <ScalarProperty Name="Line2" ColumnName="Line2" />
+          <ScalarProperty Name="Link1" ColumnName="Link1" />
+          <ScalarProperty Name="Link2" ColumnName="Link2" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="Line1En" ColumnName="Line1En" />
+          <ScalarProperty Name="Line2En" ColumnName="Line2En" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Link_GetByTop" FunctionName="HauLeModel.Store.sp_Link_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Link_Insert" FunctionName="HauLeModel.Store.sp_Link_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Link_Paging" FunctionName="HauLeModel.Store.sp_Link_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Link_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Line1" ColumnName="Line1" />
+          <ScalarProperty Name="Line2" ColumnName="Line2" />
+          <ScalarProperty Name="Link1" ColumnName="Link1" />
+          <ScalarProperty Name="Link2" ColumnName="Link2" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="Line1En" ColumnName="Line1En" />
+          <ScalarProperty Name="Line2En" ColumnName="Line2En" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Link_Update" FunctionName="HauLeModel.Store.sp_Link_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Member_Delete" FunctionName="HauLeModel.Store.sp_Member_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Member_GetByAll" FunctionName="HauLeModel.Store.sp_Member_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Member_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="GroupMemberId" ColumnName="GroupMemberId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="Isplace" ColumnName="Isplace" />
+          <ScalarProperty Name="IsplaceEn" ColumnName="IsplaceEn" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="NoteEn" ColumnName="NoteEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Member_GetById" FunctionName="HauLeModel.Store.sp_Member_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Member_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="GroupMemberId" ColumnName="GroupMemberId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="Isplace" ColumnName="Isplace" />
+          <ScalarProperty Name="IsplaceEn" ColumnName="IsplaceEn" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="NoteEn" ColumnName="NoteEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Member_GetByTop" FunctionName="HauLeModel.Store.sp_Member_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Member_Insert" FunctionName="HauLeModel.Store.sp_Member_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Member_Update" FunctionName="HauLeModel.Store.sp_Member_Update" />
+    <FunctionImportMapping FunctionImportName="sp_News_Delete" FunctionName="HauLeModel.Store.sp_News_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_News_GetByAll" FunctionName="HauLeModel.Store.sp_News_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_News_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="GroupNewsCatTag" ColumnName="GroupNewsCatTag" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Images5" ColumnName="Images5" />
+          <ScalarProperty Name="MenuSanPhamGoc" ColumnName="MenuSanPhamGoc" />
+          <ScalarProperty Name="MenuSanPhamCha" ColumnName="MenuSanPhamCha" />
+          <ScalarProperty Name="MenuSanPhamCha_con" ColumnName="MenuSanPhamCha_con" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+          <ScalarProperty Name="ord" ColumnName="ord" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_News_GetById" FunctionName="HauLeModel.Store.sp_News_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_News_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="GroupNewsCatTag" ColumnName="GroupNewsCatTag" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Images5" ColumnName="Images5" />
+          <ScalarProperty Name="MenuSanPhamGoc" ColumnName="MenuSanPhamGoc" />
+          <ScalarProperty Name="MenuSanPhamCha" ColumnName="MenuSanPhamCha" />
+          <ScalarProperty Name="MenuSanPhamCha_con" ColumnName="MenuSanPhamCha_con" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+          <ScalarProperty Name="ord" ColumnName="ord" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_News_GetByTop" FunctionName="HauLeModel.Store.sp_News_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_News_Paging" FunctionName="HauLeModel.Store.sp_News_Paging" />
+    <FunctionImportMapping FunctionImportName="sp_Page_Delete" FunctionName="HauLeModel.Store.sp_Page_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Page_GetByAll" FunctionName="HauLeModel.Store.sp_Page_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Page_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="IDMenucon" ColumnName="IDMenucon" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Page_GetById" FunctionName="HauLeModel.Store.sp_Page_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Page_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="IDMenucon" ColumnName="IDMenucon" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Page_GetByLevel" FunctionName="HauLeModel.Store.sp_Page_GetByLevel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Page_GetByLevel_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="IDMenucon" ColumnName="IDMenucon" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Page_GetByTop" FunctionName="HauLeModel.Store.sp_Page_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Page_Insert" FunctionName="HauLeModel.Store.sp_Page_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Page_Paging" FunctionName="HauLeModel.Store.sp_Page_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Page_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="IDMenucon" ColumnName="IDMenucon" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="DetailEn" ColumnName="DetailEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Page_Update" FunctionName="HauLeModel.Store.sp_Page_Update" />
+    <FunctionImportMapping FunctionImportName="sp_ProColor_Delete" FunctionName="HauLeModel.Store.sp_ProColor_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_ProColor_GetByAll" FunctionName="HauLeModel.Store.sp_ProColor_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_ProColor_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ProColor_GetById" FunctionName="HauLeModel.Store.sp_ProColor_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_ProColor_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ProColor_GetByTop" FunctionName="HauLeModel.Store.sp_ProColor_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_ProColor_Insert" FunctionName="HauLeModel.Store.sp_ProColor_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_ProColor_Paging" FunctionName="HauLeModel.Store.sp_ProColor_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_ProColor_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ProColor_Update" FunctionName="HauLeModel.Store.sp_ProColor_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Product_Delete" FunctionName="HauLeModel.Store.sp_Product_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Product_GetByAll" FunctionName="HauLeModel.Store.sp_Product_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Product_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="CatId" ColumnName="CatId" />
+          <ScalarProperty Name="CatTag" ColumnName="CatTag" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+          <ScalarProperty Name="PiceOld" ColumnName="PiceOld" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Codepro" ColumnName="Codepro" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="DateBegin" ColumnName="DateBegin" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Product_GetByCatelogy" FunctionName="HauLeModel.Store.sp_Product_GetByCatelogy">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Product_GetByCatelogy_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="CatId" ColumnName="CatId" />
+          <ScalarProperty Name="CatTag" ColumnName="CatTag" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+          <ScalarProperty Name="PiceOld" ColumnName="PiceOld" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Codepro" ColumnName="Codepro" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="DateBegin" ColumnName="DateBegin" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Product_GetById" FunctionName="HauLeModel.Store.sp_Product_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Product_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="CatId" ColumnName="CatId" />
+          <ScalarProperty Name="CatTag" ColumnName="CatTag" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+          <ScalarProperty Name="PiceOld" ColumnName="PiceOld" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Codepro" ColumnName="Codepro" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="DateBegin" ColumnName="DateBegin" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Product_GetByTop" FunctionName="HauLeModel.Store.sp_Product_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Product_Insert" FunctionName="HauLeModel.Store.sp_Product_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Product_Paging" FunctionName="HauLeModel.Store.sp_Product_Paging" />
+    <FunctionImportMapping FunctionImportName="sp_Product_Paging1" FunctionName="HauLeModel.Store.sp_Product_Paging1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Product_Paging1_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="CatId" ColumnName="CatId" />
+          <ScalarProperty Name="CatTag" ColumnName="CatTag" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+          <ScalarProperty Name="PiceOld" ColumnName="PiceOld" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+          <ScalarProperty Name="Image5" ColumnName="Image5" />
+          <ScalarProperty Name="Codepro" ColumnName="Codepro" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="DateBegin" ColumnName="DateBegin" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Product_Update" FunctionName="HauLeModel.Store.sp_Product_Update" />
+    <FunctionImportMapping FunctionImportName="sp_ProSize_Delete" FunctionName="HauLeModel.Store.sp_ProSize_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_ProSize_GetByAll" FunctionName="HauLeModel.Store.sp_ProSize_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_ProSize_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ProSize_GetById" FunctionName="HauLeModel.Store.sp_ProSize_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_ProSize_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ProSize_GetByTop" FunctionName="HauLeModel.Store.sp_ProSize_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_ProSize_Insert" FunctionName="HauLeModel.Store.sp_ProSize_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_ProSize_Paging" FunctionName="HauLeModel.Store.sp_ProSize_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_ProSize_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProId" ColumnName="ProId" />
+          <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_ProSize_Update" FunctionName="HauLeModel.Store.sp_ProSize_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Province_Delete" FunctionName="HauLeModel.Store.sp_Province_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Province_GetByAll" FunctionName="HauLeModel.Store.sp_Province_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Province_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Province_GetById" FunctionName="HauLeModel.Store.sp_Province_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Province_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Province_GetByTop" FunctionName="HauLeModel.Store.sp_Province_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Province_Insert" FunctionName="HauLeModel.Store.sp_Province_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Province_Paging" FunctionName="HauLeModel.Store.sp_Province_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Province_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Province_Update" FunctionName="HauLeModel.Store.sp_Province_Update" />
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="HauLeModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_Shop_Delete" FunctionName="HauLeModel.Store.sp_Shop_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Shop_GetByAddress" FunctionName="HauLeModel.Store.sp_Shop_GetByAddress">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Shop_GetByAddress_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Shop_GetByAll" FunctionName="HauLeModel.Store.sp_Shop_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Shop_GetByAll_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Shop_GetById" FunctionName="HauLeModel.Store.sp_Shop_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Shop_GetById_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Shop_GetByTop" FunctionName="HauLeModel.Store.sp_Shop_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Shop_Insert" FunctionName="HauLeModel.Store.sp_Shop_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Shop_Paging" FunctionName="HauLeModel.Store.sp_Shop_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Shop_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Shop_Update" FunctionName="HauLeModel.Store.sp_Shop_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Sizes_Delete" FunctionName="HauLeModel.Store.sp_Sizes_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Sizes_GetByAll" FunctionName="HauLeModel.Store.sp_Sizes_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Sizes_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Des" ColumnName="Des" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Sizes_GetById" FunctionName="HauLeModel.Store.sp_Sizes_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Sizes_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Des" ColumnName="Des" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Sizes_GetByTop" FunctionName="HauLeModel.Store.sp_Sizes_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Sizes_Insert" FunctionName="HauLeModel.Store.sp_Sizes_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Sizes_Paging" FunctionName="HauLeModel.Store.sp_Sizes_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Sizes_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Des" ColumnName="Des" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Sizes_Update" FunctionName="HauLeModel.Store.sp_Sizes_Update" />
+    <FunctionImportMapping FunctionImportName="sp_Support_Delete" FunctionName="HauLeModel.Store.sp_Support_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_Support_GetByAll" FunctionName="HauLeModel.Store.sp_Support_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Support_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Nick" ColumnName="Nick" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="GroupSupportId" ColumnName="GroupSupportId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Support_GetById" FunctionName="HauLeModel.Store.sp_Support_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_Support_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Nick" ColumnName="Nick" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="GroupSupportId" ColumnName="GroupSupportId" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Support_GetByTop" FunctionName="HauLeModel.Store.sp_Support_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_Support_Insert" FunctionName="HauLeModel.Store.sp_Support_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_Support_Update" FunctionName="HauLeModel.Store.sp_Support_Update" />
+    <FunctionImportMapping FunctionImportName="sp_tbBill_customers_Delete" FunctionName="HauLeModel.Store.sp_tbBill_customers_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_tbBill_customers_GetByAll" FunctionName="HauLeModel.Store.sp_tbBill_customers_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbBill_customers_GetByAll_Result">
+          <ScalarProperty Name="billid" ColumnName="billid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="totalmoney" ColumnName="totalmoney" />
+          <ScalarProperty Name="idate" ColumnName="idate" />
+          <ScalarProperty Name="xdate" ColumnName="xdate" />
+          <ScalarProperty Name="request" ColumnName="request" />
+          <ScalarProperty Name="typepay" ColumnName="typepay" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="lang" ColumnName="lang" />
+          <ScalarProperty Name="show" ColumnName="show" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbBill_customers_GetById" FunctionName="HauLeModel.Store.sp_tbBill_customers_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbBill_customers_GetById_Result">
+          <ScalarProperty Name="billid" ColumnName="billid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="totalmoney" ColumnName="totalmoney" />
+          <ScalarProperty Name="idate" ColumnName="idate" />
+          <ScalarProperty Name="xdate" ColumnName="xdate" />
+          <ScalarProperty Name="request" ColumnName="request" />
+          <ScalarProperty Name="typepay" ColumnName="typepay" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="lang" ColumnName="lang" />
+          <ScalarProperty Name="show" ColumnName="show" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbBill_customers_GetByTop" FunctionName="HauLeModel.Store.sp_tbBill_customers_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_tbBill_customers_Insert" FunctionName="HauLeModel.Store.sp_tbBill_customers_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_tbBill_customers_Insert_GetID" FunctionName="HauLeModel.Store.sp_tbBill_customers_Insert_GetID" />
+    <FunctionImportMapping FunctionImportName="sp_tbBill_customers_Paging" FunctionName="HauLeModel.Store.sp_tbBill_customers_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbBill_customers_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="billid" ColumnName="billid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="totalmoney" ColumnName="totalmoney" />
+          <ScalarProperty Name="idate" ColumnName="idate" />
+          <ScalarProperty Name="xdate" ColumnName="xdate" />
+          <ScalarProperty Name="request" ColumnName="request" />
+          <ScalarProperty Name="typepay" ColumnName="typepay" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="lang" ColumnName="lang" />
+          <ScalarProperty Name="show" ColumnName="show" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbBill_customers_Update" FunctionName="HauLeModel.Store.sp_tbBill_customers_Update" />
+    <FunctionImportMapping FunctionImportName="sp_tbBilldetail_Delete" FunctionName="HauLeModel.Store.sp_tbBilldetail_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_tbBilldetail_GetByAll" FunctionName="HauLeModel.Store.sp_tbBilldetail_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbBilldetail_GetByAll_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="bilid" ColumnName="bilid" />
+          <ScalarProperty Name="proid" ColumnName="proid" />
+          <ScalarProperty Name="sizeid" ColumnName="sizeid" />
+          <ScalarProperty Name="colorid" ColumnName="colorid" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="bilprice" ColumnName="bilprice" />
+          <ScalarProperty Name="bilpricevnd" ColumnName="bilpricevnd" />
+          <ScalarProperty Name="bilmoney" ColumnName="bilmoney" />
+          <ScalarProperty Name="billlocation" ColumnName="billlocation" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbBilldetail_GetById" FunctionName="HauLeModel.Store.sp_tbBilldetail_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbBilldetail_GetById_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="bilid" ColumnName="bilid" />
+          <ScalarProperty Name="proid" ColumnName="proid" />
+          <ScalarProperty Name="sizeid" ColumnName="sizeid" />
+          <ScalarProperty Name="colorid" ColumnName="colorid" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="bilprice" ColumnName="bilprice" />
+          <ScalarProperty Name="bilpricevnd" ColumnName="bilpricevnd" />
+          <ScalarProperty Name="bilmoney" ColumnName="bilmoney" />
+          <ScalarProperty Name="billlocation" ColumnName="billlocation" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbBilldetail_GetByTop" FunctionName="HauLeModel.Store.sp_tbBilldetail_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_tbBilldetail_Insert" FunctionName="HauLeModel.Store.sp_tbBilldetail_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_tbBilldetail_Paging" FunctionName="HauLeModel.Store.sp_tbBilldetail_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbBilldetail_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="bilid" ColumnName="bilid" />
+          <ScalarProperty Name="proid" ColumnName="proid" />
+          <ScalarProperty Name="sizeid" ColumnName="sizeid" />
+          <ScalarProperty Name="colorid" ColumnName="colorid" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="bilprice" ColumnName="bilprice" />
+          <ScalarProperty Name="bilpricevnd" ColumnName="bilpricevnd" />
+          <ScalarProperty Name="bilmoney" ColumnName="bilmoney" />
+          <ScalarProperty Name="billlocation" ColumnName="billlocation" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbBilldetail_Update" FunctionName="HauLeModel.Store.sp_tbBilldetail_Update" />
+    <FunctionImportMapping FunctionImportName="sp_tbCUSTOMERS_Delete" FunctionName="HauLeModel.Store.sp_tbCUSTOMERS_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_tbCUSTOMERS_GetByAll" FunctionName="HauLeModel.Store.sp_tbCUSTOMERS_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbCUSTOMERS_GetByAll_Result">
+          <ScalarProperty Name="iusid" ColumnName="iusid" />
+          <ScalarProperty Name="vusername" ColumnName="vusername" />
+          <ScalarProperty Name="vpassword" ColumnName="vpassword" />
+          <ScalarProperty Name="vcusname" ColumnName="vcusname" />
+          <ScalarProperty Name="dbirthday" ColumnName="dbirthday" />
+          <ScalarProperty Name="vprovince" ColumnName="vprovince" />
+          <ScalarProperty Name="vaddress" ColumnName="vaddress" />
+          <ScalarProperty Name="vphone" ColumnName="vphone" />
+          <ScalarProperty Name="vmobile" ColumnName="vmobile" />
+          <ScalarProperty Name="vemail" ColumnName="vemail" />
+          <ScalarProperty Name="dcreatedate" ColumnName="dcreatedate" />
+          <ScalarProperty Name="istatus" ColumnName="istatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbCUSTOMERS_GetById" FunctionName="HauLeModel.Store.sp_tbCUSTOMERS_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbCUSTOMERS_GetById_Result">
+          <ScalarProperty Name="iusid" ColumnName="iusid" />
+          <ScalarProperty Name="vusername" ColumnName="vusername" />
+          <ScalarProperty Name="vpassword" ColumnName="vpassword" />
+          <ScalarProperty Name="vcusname" ColumnName="vcusname" />
+          <ScalarProperty Name="dbirthday" ColumnName="dbirthday" />
+          <ScalarProperty Name="vprovince" ColumnName="vprovince" />
+          <ScalarProperty Name="vaddress" ColumnName="vaddress" />
+          <ScalarProperty Name="vphone" ColumnName="vphone" />
+          <ScalarProperty Name="vmobile" ColumnName="vmobile" />
+          <ScalarProperty Name="vemail" ColumnName="vemail" />
+          <ScalarProperty Name="dcreatedate" ColumnName="dcreatedate" />
+          <ScalarProperty Name="istatus" ColumnName="istatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbCUSTOMERS_GetByTop" FunctionName="HauLeModel.Store.sp_tbCUSTOMERS_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_tbCUSTOMERS_Insert" FunctionName="HauLeModel.Store.sp_tbCUSTOMERS_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_tbCUSTOMERS_Paging" FunctionName="HauLeModel.Store.sp_tbCUSTOMERS_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbCUSTOMERS_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="iusid" ColumnName="iusid" />
+          <ScalarProperty Name="vusername" ColumnName="vusername" />
+          <ScalarProperty Name="vpassword" ColumnName="vpassword" />
+          <ScalarProperty Name="vcusname" ColumnName="vcusname" />
+          <ScalarProperty Name="dbirthday" ColumnName="dbirthday" />
+          <ScalarProperty Name="vprovince" ColumnName="vprovince" />
+          <ScalarProperty Name="vaddress" ColumnName="vaddress" />
+          <ScalarProperty Name="vphone" ColumnName="vphone" />
+          <ScalarProperty Name="vmobile" ColumnName="vmobile" />
+          <ScalarProperty Name="vemail" ColumnName="vemail" />
+          <ScalarProperty Name="dcreatedate" ColumnName="dcreatedate" />
+          <ScalarProperty Name="istatus" ColumnName="istatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbCUSTOMERS_Update" FunctionName="HauLeModel.Store.sp_tbCUSTOMERS_Update" />
+    <FunctionImportMapping FunctionImportName="sp_tbRecipient_Delete" FunctionName="HauLeModel.Store.sp_tbRecipient_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_tbRecipient_GetByAll" FunctionName="HauLeModel.Store.sp_tbRecipient_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbRecipient_GetByAll_Result">
+          <ScalarProperty Name="ireid" ColumnName="ireid" />
+          <ScalarProperty Name="iusid" ColumnName="iusid" />
+          <ScalarProperty Name="vcusname" ColumnName="vcusname" />
+          <ScalarProperty Name="dbirthday" ColumnName="dbirthday" />
+          <ScalarProperty Name="vprovince" ColumnName="vprovince" />
+          <ScalarProperty Name="vaddress" ColumnName="vaddress" />
+          <ScalarProperty Name="vphone" ColumnName="vphone" />
+          <ScalarProperty Name="vmobile" ColumnName="vmobile" />
+          <ScalarProperty Name="vemail" ColumnName="vemail" />
+          <ScalarProperty Name="dcreatedate" ColumnName="dcreatedate" />
+          <ScalarProperty Name="istatus" ColumnName="istatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbRecipient_GetById" FunctionName="HauLeModel.Store.sp_tbRecipient_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbRecipient_GetById_Result">
+          <ScalarProperty Name="ireid" ColumnName="ireid" />
+          <ScalarProperty Name="iusid" ColumnName="iusid" />
+          <ScalarProperty Name="vcusname" ColumnName="vcusname" />
+          <ScalarProperty Name="dbirthday" ColumnName="dbirthday" />
+          <ScalarProperty Name="vprovince" ColumnName="vprovince" />
+          <ScalarProperty Name="vaddress" ColumnName="vaddress" />
+          <ScalarProperty Name="vphone" ColumnName="vphone" />
+          <ScalarProperty Name="vmobile" ColumnName="vmobile" />
+          <ScalarProperty Name="vemail" ColumnName="vemail" />
+          <ScalarProperty Name="dcreatedate" ColumnName="dcreatedate" />
+          <ScalarProperty Name="istatus" ColumnName="istatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbRecipient_GetByTop" FunctionName="HauLeModel.Store.sp_tbRecipient_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_tbRecipient_Insert" FunctionName="HauLeModel.Store.sp_tbRecipient_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_tbRecipient_Paging" FunctionName="HauLeModel.Store.sp_tbRecipient_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_tbRecipient_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="ireid" ColumnName="ireid" />
+          <ScalarProperty Name="iusid" ColumnName="iusid" />
+          <ScalarProperty Name="vcusname" ColumnName="vcusname" />
+          <ScalarProperty Name="dbirthday" ColumnName="dbirthday" />
+          <ScalarProperty Name="vprovince" ColumnName="vprovince" />
+          <ScalarProperty Name="vaddress" ColumnName="vaddress" />
+          <ScalarProperty Name="vphone" ColumnName="vphone" />
+          <ScalarProperty Name="vmobile" ColumnName="vmobile" />
+          <ScalarProperty Name="vemail" ColumnName="vemail" />
+          <ScalarProperty Name="dcreatedate" ColumnName="dcreatedate" />
+          <ScalarProperty Name="istatus" ColumnName="istatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_tbRecipient_Update" FunctionName="HauLeModel.Store.sp_tbRecipient_Update" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="HauLeModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="sp_User_Delete" FunctionName="HauLeModel.Store.sp_User_Delete" />
+    <FunctionImportMapping FunctionImportName="sp_User_GetByAll" FunctionName="HauLeModel.Store.sp_User_GetByAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_User_GetByAll_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_User_GetById" FunctionName="HauLeModel.Store.sp_User_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_User_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_User_GetByTop" FunctionName="HauLeModel.Store.sp_User_GetByTop" />
+    <FunctionImportMapping FunctionImportName="sp_User_Insert" FunctionName="HauLeModel.Store.sp_User_Insert" />
+    <FunctionImportMapping FunctionImportName="sp_User_Paging" FunctionName="HauLeModel.Store.sp_User_Paging">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.sp_User_Paging_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="Ord" ColumnName="Ord" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_User_Update" FunctionName="HauLeModel.Store.sp_User_Update" />
+    <FunctionImportMapping FunctionImportName="spThongKe_Edit" FunctionName="HauLeModel.Store.spThongKe_Edit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HauLeModel.spThongKe_Edit_Result">
+          <ScalarProperty Name="HomNay" ColumnName="HomNay" />
+          <ScalarProperty Name="HomQua" ColumnName="HomQua" />
+          <ScalarProperty Name="TuanNay" ColumnName="TuanNay" />
+          <ScalarProperty Name="TuanTruoc" ColumnName="TuanTruoc" />
+          <ScalarProperty Name="ThangNay" ColumnName="ThangNay" />
+          <ScalarProperty Name="ThangTruoc" ColumnName="ThangTruoc" />
+          <ScalarProperty Name="NamNay" ColumnName="NamNay" />
+          <ScalarProperty Name="NamTruoc" ColumnName="NamTruoc" />
+          <ScalarProperty Name="TatCa" ColumnName="TatCa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,10 @@
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\HauLe.Model.dll.config
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\HauLe.Model.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\HauLe.Model.pdb
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\EntityFramework.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\EntityFramework.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\obj\Debug\HauLe.Model.csproj.CoreCompileInputs.cache
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\obj\Debug\HauLe.Model.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\obj\Debug\HauLe.Model.pdb

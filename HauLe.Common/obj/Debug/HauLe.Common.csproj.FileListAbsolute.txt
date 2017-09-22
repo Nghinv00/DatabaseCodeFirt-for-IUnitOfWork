@@ -1,0 +1,6 @@
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Common\bin\Debug\HauLe.Common.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Common\bin\Debug\HauLe.Common.pdb
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Common\obj\Debug\HauLe.Common.csprojResolveAssemblyReference.cache
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Common\obj\Debug\HauLe.Common.csproj.CoreCompileInputs.cache
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Common\obj\Debug\HauLe.Common.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Common\obj\Debug\HauLe.Common.pdb

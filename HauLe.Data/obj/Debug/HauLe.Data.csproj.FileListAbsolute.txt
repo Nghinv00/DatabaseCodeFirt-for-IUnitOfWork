@@ -1,0 +1,14 @@
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\bin\Debug\HauLe.Data.dll.config
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\bin\Debug\HauLe.Data.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\bin\Debug\HauLe.Data.pdb
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\bin\Debug\EntityFramework.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\bin\Debug\HauLe.Model.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\bin\Debug\HauLe.Model.pdb
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\bin\Debug\HauLe.Model.dll.config
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\bin\Debug\EntityFramework.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\obj\Debug\HauLe.Data.csprojResolveAssemblyReference.cache
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\obj\Debug\HauLe.Data.csproj.CoreCompileInputs.cache
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\obj\Debug\HauLe.Data.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Data\obj\Debug\HauLe.Data.pdb
