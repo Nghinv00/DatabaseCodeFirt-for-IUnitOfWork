@@ -1,4 +1,5 @@
-﻿using HauLe.Model.Model;
+﻿using HauLe.Model.DataModelEntity;
+using HauLe.Model.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -12,7 +13,7 @@ namespace HauLe.Data.Infrastructure
     public abstract class RepositoryBase<T> : IRepository<T> where T : class
     {
         #region Properties
-        private HauLeEntities dataContext;
+        private ApplicationDbContext dataContext;
         private readonly IDbSet<T> dbSet;
 
         protected IDbFactory DbFactory
@@ -21,7 +22,7 @@ namespace HauLe.Data.Infrastructure
             private set;
         }
 
-        protected HauLeEntities DbContext
+        protected ApplicationDbContext DbContext
         {
             get { return dataContext ?? (dataContext = DbFactory.Init()); }
         }

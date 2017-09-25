@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HauLeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ApplicationGroups">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="ApplicationRoleGroups">
+    <Key>
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApplicationRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="Discriminator" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApplicationUserClaim">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+    <Property Name="ApplicationUser_Id" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="ApplicationUserGroups">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApplicationUserLogins">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="LoginProvider" Type="nvarchar(max)" />
+    <Property Name="ProviderKey" Type="nvarchar(max)" />
+    <Property Name="ApplicationUser_Id" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="ApplicationUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ApplicationUser_Id" Type="nvarchar" MaxLength="128" />
+    <Property Name="IdentityRole_Id" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="ApplicationUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="256" />
+    <Property Name="Address" Type="nvarchar" MaxLength="256" />
+    <Property Name="BirthDay" Type="datetime" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Brands">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="400" />
+    <Property Name="Logo" Type="varchar" MaxLength="300" />
+    <Property Name="Ord" Type="int" />
+    <Property Name="Lang" Type="varchar" MaxLength="5" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <Association Name="FK_dbo_ApplicationRoleGroups_dbo_ApplicationGroups_GroupId">
+    <End Role="ApplicationGroups" Type="Self.ApplicationGroups" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ApplicationRoleGroups" Type="Self.ApplicationRoleGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationGroups">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ApplicationRoleGroups">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ApplicationRoleGroups_dbo_ApplicationRoles_RoleId">
+    <End Role="ApplicationRoles" Type="Self.ApplicationRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ApplicationRoleGroups" Type="Self.ApplicationRoleGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ApplicationRoleGroups">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ApplicationUserClaim_dbo_ApplicationUsers_ApplicationUser_Id">
+    <End Role="ApplicationUsers" Type="Self.ApplicationUsers" Multiplicity="0..1" />
+    <End Role="ApplicationUserClaim" Type="Self.ApplicationUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ApplicationUserClaim">
+        <PropertyRef Name="ApplicationUser_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ApplicationUserGroups_dbo_ApplicationGroups_GroupId">
+    <End Role="ApplicationGroups" Type="Self.ApplicationGroups" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ApplicationUserGroups" Type="Self.ApplicationUserGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationGroups">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ApplicationUserGroups">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ApplicationUserGroups_dbo_ApplicationUsers_UserId">
+    <End Role="ApplicationUsers" Type="Self.ApplicationUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ApplicationUserGroups" Type="Self.ApplicationUserGroups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ApplicationUserGroups">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ApplicationUserLogins_dbo_ApplicationUsers_ApplicationUser_Id">
+    <End Role="ApplicationUsers" Type="Self.ApplicationUsers" Multiplicity="0..1" />
+    <End Role="ApplicationUserLogins" Type="Self.ApplicationUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ApplicationUserLogins">
+        <PropertyRef Name="ApplicationUser_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ApplicationUserRoles_dbo_ApplicationRoles_IdentityRole_Id">
+    <End Role="ApplicationRoles" Type="Self.ApplicationRoles" Multiplicity="0..1" />
+    <End Role="ApplicationUserRoles" Type="Self.ApplicationUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ApplicationUserRoles">
+        <PropertyRef Name="IdentityRole_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ApplicationUserRoles_dbo_ApplicationUsers_ApplicationUser_Id">
+    <End Role="ApplicationUsers" Type="Self.ApplicationUsers" Multiplicity="0..1" />
+    <End Role="ApplicationUserRoles" Type="Self.ApplicationUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ApplicationUserRoles">
+        <PropertyRef Name="ApplicationUser_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HauLeModelStoreContainer">
+    <EntitySet Name="ApplicationGroups" EntityType="Self.ApplicationGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationRoleGroups" EntityType="Self.ApplicationRoleGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationRoles" EntityType="Self.ApplicationRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUserClaim" EntityType="Self.ApplicationUserClaim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUserGroups" EntityType="Self.ApplicationUserGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUserLogins" EntityType="Self.ApplicationUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUserRoles" EntityType="Self.ApplicationUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUsers" EntityType="Self.ApplicationUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Brands" EntityType="Self.Brands" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_ApplicationRoleGroups_dbo_ApplicationGroups_GroupId" Association="Self.FK_dbo_ApplicationRoleGroups_dbo_ApplicationGroups_GroupId">
+      <End Role="ApplicationGroups" EntitySet="ApplicationGroups" />
+      <End Role="ApplicationRoleGroups" EntitySet="ApplicationRoleGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ApplicationRoleGroups_dbo_ApplicationRoles_RoleId" Association="Self.FK_dbo_ApplicationRoleGroups_dbo_ApplicationRoles_RoleId">
+      <End Role="ApplicationRoles" EntitySet="ApplicationRoles" />
+      <End Role="ApplicationRoleGroups" EntitySet="ApplicationRoleGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ApplicationUserClaim_dbo_ApplicationUsers_ApplicationUser_Id" Association="Self.FK_dbo_ApplicationUserClaim_dbo_ApplicationUsers_ApplicationUser_Id">
+      <End Role="ApplicationUsers" EntitySet="ApplicationUsers" />
+      <End Role="ApplicationUserClaim" EntitySet="ApplicationUserClaim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ApplicationUserGroups_dbo_ApplicationGroups_GroupId" Association="Self.FK_dbo_ApplicationUserGroups_dbo_ApplicationGroups_GroupId">
+      <End Role="ApplicationGroups" EntitySet="ApplicationGroups" />
+      <End Role="ApplicationUserGroups" EntitySet="ApplicationUserGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ApplicationUserGroups_dbo_ApplicationUsers_UserId" Association="Self.FK_dbo_ApplicationUserGroups_dbo_ApplicationUsers_UserId">
+      <End Role="ApplicationUsers" EntitySet="ApplicationUsers" />
+      <End Role="ApplicationUserGroups" EntitySet="ApplicationUserGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ApplicationUserLogins_dbo_ApplicationUsers_ApplicationUser_Id" Association="Self.FK_dbo_ApplicationUserLogins_dbo_ApplicationUsers_ApplicationUser_Id">
+      <End Role="ApplicationUsers" EntitySet="ApplicationUsers" />
+      <End Role="ApplicationUserLogins" EntitySet="ApplicationUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ApplicationUserRoles_dbo_ApplicationRoles_IdentityRole_Id" Association="Self.FK_dbo_ApplicationUserRoles_dbo_ApplicationRoles_IdentityRole_Id">
+      <End Role="ApplicationRoles" EntitySet="ApplicationRoles" />
+      <End Role="ApplicationUserRoles" EntitySet="ApplicationUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ApplicationUserRoles_dbo_ApplicationUsers_ApplicationUser_Id" Association="Self.FK_dbo_ApplicationUserRoles_dbo_ApplicationUsers_ApplicationUser_Id">
+      <End Role="ApplicationUsers" EntitySet="ApplicationUsers" />
+      <End Role="ApplicationUserRoles" EntitySet="ApplicationUserRoles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

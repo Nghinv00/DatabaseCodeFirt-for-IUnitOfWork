@@ -21,6 +21,88 @@
     <Property Name="NameEn" Type="nvarchar" MaxLength="150" />
     <Property Name="ContentEn" Type="ntext" />
   </EntityType>
+  <EntityType Name="ApplicationGroups">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="ApplicationRoleGroups">
+    <Key>
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApplicationRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="Discriminator" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApplicationUserClaim">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+    <Property Name="ApplicationUser_Id" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="ApplicationUserGroups">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApplicationUserLogins">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="LoginProvider" Type="nvarchar(max)" />
+    <Property Name="ProviderKey" Type="nvarchar(max)" />
+    <Property Name="ApplicationUser_Id" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="ApplicationUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="IdentityRole_Id" Type="nvarchar" MaxLength="128" />
+    <Property Name="ApplicationUser_Id" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="ApplicationUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="256" />
+    <Property Name="Address" Type="nvarchar" MaxLength="256" />
+    <Property Name="BirthDay" Type="datetime" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+  </EntityType>
   <EntityType Name="Brands">
     <Key>
       <PropertyRef Name="Id" />
@@ -2426,6 +2508,14 @@ warning 6002: The table/view 'Remoingay.dbo.Page' does not have a primary key de
   <Function Name="spThongKe_Edit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="HauLeModelStoreContainer">
     <EntitySet Name="Advertise" EntityType="Self.Advertise" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationGroups" EntityType="Self.ApplicationGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationRoleGroups" EntityType="Self.ApplicationRoleGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationRoles" EntityType="Self.ApplicationRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUserClaim" EntityType="Self.ApplicationUserClaim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUserGroups" EntityType="Self.ApplicationUserGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUserLogins" EntityType="Self.ApplicationUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUserRoles" EntityType="Self.ApplicationUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApplicationUsers" EntityType="Self.ApplicationUsers" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Brands" EntityType="Self.Brands" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Chitiethinh" EntityType="Self.Chitiethinh" Schema="dbo" store:Type="Tables" />

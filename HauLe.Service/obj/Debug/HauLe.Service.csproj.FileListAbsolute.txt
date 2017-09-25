@@ -17,3 +17,7 @@ E:\WEB MVC\ExampleDatabaseFirt\HauLe.Service\obj\Debug\HauLe.Service.csprojResol
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.Service\obj\Debug\HauLe.Service.csproj.CoreCompileInputs.cache
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.Service\obj\Debug\HauLe.Service.dll
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.Service\obj\Debug\HauLe.Service.pdb
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml

@@ -1,0 +1,188 @@
+﻿CREATE TABLE [dbo].[ApplicationGroups](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](250) NULL,
+	[Description] [nvarchar](250) NULL,
+ CONSTRAINT [PK_dbo.ApplicationGroups] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[ApplicationRoleGroups]    Script Date: 9/23/2017 9:32:45 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ApplicationRoleGroups](
+	[GroupId] [int] NOT NULL,
+	[RoleId] [nvarchar](128) NOT NULL,
+ CONSTRAINT [PK_dbo.ApplicationRoleGroups] PRIMARY KEY CLUSTERED 
+(
+	[GroupId] ASC,
+	[RoleId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[ApplicationRoles]    Script Date: 9/23/2017 9:32:45 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ApplicationRoles](
+	[Id] [nvarchar](128) NOT NULL,
+	[Name] [nvarchar](max) NULL,
+	[Description] [nvarchar](250) NULL,
+	[Discriminator] [nvarchar](128) NOT NULL,
+ CONSTRAINT [PK_dbo.ApplicationRoles] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[ApplicationUserClaim]    Script Date: 9/23/2017 9:32:45 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ApplicationUserClaim](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[UserId] [nvarchar](128) NOT NULL,
+	[ClaimType] [nvarchar](max) NULL,
+	[ClaimValue] [nvarchar](max) NULL,
+	[ApplicationUser_Id] [nvarchar](128) NULL,
+ CONSTRAINT [PK_dbo.ApplicationUserClaim] PRIMARY KEY CLUSTERED 
+(
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[ApplicationUserGroups]    Script Date: 9/23/2017 9:32:45 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ApplicationUserGroups](
+	[UserId] [nvarchar](128) NOT NULL,
+	[GroupId] [int] NOT NULL,
+ CONSTRAINT [PK_dbo.ApplicationUserGroups] PRIMARY KEY CLUSTERED 
+(
+	[UserId] ASC,
+	[GroupId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[ApplicationUserLogins]    Script Date: 9/23/2017 9:32:45 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ApplicationUserLogins](
+	[UserId] [nvarchar](128) NOT NULL,
+	[LoginProvider] [nvarchar](max) NULL,
+	[ProviderKey] [nvarchar](max) NULL,
+	[ApplicationUser_Id] [nvarchar](128) NULL,
+ CONSTRAINT [PK_dbo.ApplicationUserLogins] PRIMARY KEY CLUSTERED 
+(
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[ApplicationUserRoles]    Script Date: 9/23/2017 9:32:45 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ApplicationUserRoles](
+	[UserId] [nvarchar](128) NOT NULL,
+	[RoleId] [nvarchar](128) NOT NULL,
+	[IdentityRole_Id] [nvarchar](128) NULL,
+	[ApplicationUser_Id] [nvarchar](128) NULL,
+ CONSTRAINT [PK_dbo.ApplicationUserRoles] PRIMARY KEY CLUSTERED 
+(
+	[UserId] ASC,
+	[RoleId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[ApplicationUsers]    Script Date: 9/23/2017 9:32:45 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ApplicationUsers](
+	[Id] [nvarchar](128) NOT NULL,
+	[FullName] [nvarchar](256) NULL,
+	[Address] [nvarchar](256) NULL,
+	[BirthDay] [datetime] NULL,
+	[Email] [nvarchar](max) NULL,
+	[EmailConfirmed] [bit] NOT NULL,
+	[PasswordHash] [nvarchar](max) NULL,
+	[SecurityStamp] [nvarchar](max) NULL,
+	[PhoneNumber] [nvarchar](max) NULL,
+	[PhoneNumberConfirmed] [bit] NOT NULL,
+	[TwoFactorEnabled] [bit] NOT NULL,
+	[LockoutEndDateUtc] [datetime] NULL,
+	[LockoutEnabled] [bit] NOT NULL,
+	[AccessFailedCount] [int] NOT NULL,
+	[UserName] [nvarchar](max) NULL,
+ CONSTRAINT [PK_dbo.ApplicationUsers] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[ContactDetails]    Script Date: 9/23/2017 9:32:45 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+--Sql insert database
+
+SET IDENTITY_INSERT [dbo].[ApplicationGroups] ON 
+GO
+INSERT [dbo].[ApplicationGroups] ([ID], [Name], [Description]) VALUES (1, N'Admin', NULL)
+GO
+INSERT [dbo].[ApplicationGroups] ([ID], [Name], [Description]) VALUES (2, N'User', NULL)
+GO
+SET IDENTITY_INSERT [dbo].[ApplicationGroups] OFF
+GO
+INSERT [dbo].[ApplicationRoleGroups] ([GroupId], [RoleId]) VALUES (1, N'11cb9f3d-c17a-4891-8ecc-c58f5688cf6e')
+GO
+INSERT [dbo].[ApplicationRoleGroups] ([GroupId], [RoleId]) VALUES (1, N'15ab6a45-bde6-4fdd-9427-c6092f894088')
+GO
+INSERT [dbo].[ApplicationRoleGroups] ([GroupId], [RoleId]) VALUES (1, N'7b0b7c99-a831-4ced-b3a8-9f7423e49445')
+GO
+INSERT [dbo].[ApplicationRoleGroups] ([GroupId], [RoleId]) VALUES (1, N'f1931d11-f3fe-49eb-8169-6ca6e9bd7f18')
+GO
+INSERT [dbo].[ApplicationRoles] ([Id], [Name], [Description], [Discriminator]) VALUES (N'10ca9ba6-30df-496f-ad50-ee8a4f4aa396', N'User', NULL, N'IdentityRole')
+GO
+INSERT [dbo].[ApplicationRoles] ([Id], [Name], [Description], [Discriminator]) VALUES (N'11cb9f3d-c17a-4891-8ecc-c58f5688cf6e', N'View', N'view', N'ApplicationRole')
+GO
+INSERT [dbo].[ApplicationRoles] ([Id], [Name], [Description], [Discriminator]) VALUES (N'15ab6a45-bde6-4fdd-9427-c6092f894088', N'update', N'update', N'ApplicationRole')
+GO
+INSERT [dbo].[ApplicationRoles] ([Id], [Name], [Description], [Discriminator]) VALUES (N'7b0b7c99-a831-4ced-b3a8-9f7423e49445', N'delete', N'delete', N'ApplicationRole')
+GO
+INSERT [dbo].[ApplicationRoles] ([Id], [Name], [Description], [Discriminator]) VALUES (N'da2d86d2-eb38-4bc0-ab0e-18cca1b052d4', N'Admin', NULL, N'IdentityRole')
+GO
+INSERT [dbo].[ApplicationRoles] ([Id], [Name], [Description], [Discriminator]) VALUES (N'f1931d11-f3fe-49eb-8169-6ca6e9bd7f18', N'create', N'create', N'ApplicationRole')
+GO
+INSERT [dbo].[ApplicationUserGroups] ([UserId], [GroupId]) VALUES (N'387b084e-5c18-4e0c-a664-c1ba504fb452', 1)
+GO
+INSERT [dbo].[ApplicationUserRoles] ([UserId], [RoleId], [IdentityRole_Id], [ApplicationUser_Id]) VALUES (N'387b084e-5c18-4e0c-a664-c1ba504fb452', N'10ca9ba6-30df-496f-ad50-ee8a4f4aa396', NULL, NULL)
+GO
+INSERT [dbo].[ApplicationUserRoles] ([UserId], [RoleId], [IdentityRole_Id], [ApplicationUser_Id]) VALUES (N'387b084e-5c18-4e0c-a664-c1ba504fb452', N'11cb9f3d-c17a-4891-8ecc-c58f5688cf6e', NULL, NULL)
+GO
+INSERT [dbo].[ApplicationUserRoles] ([UserId], [RoleId], [IdentityRole_Id], [ApplicationUser_Id]) VALUES (N'387b084e-5c18-4e0c-a664-c1ba504fb452', N'15ab6a45-bde6-4fdd-9427-c6092f894088', NULL, NULL)
+GO
+INSERT [dbo].[ApplicationUserRoles] ([UserId], [RoleId], [IdentityRole_Id], [ApplicationUser_Id]) VALUES (N'387b084e-5c18-4e0c-a664-c1ba504fb452', N'7b0b7c99-a831-4ced-b3a8-9f7423e49445', NULL, NULL)
+GO
+INSERT [dbo].[ApplicationUserRoles] ([UserId], [RoleId], [IdentityRole_Id], [ApplicationUser_Id]) VALUES (N'387b084e-5c18-4e0c-a664-c1ba504fb452', N'da2d86d2-eb38-4bc0-ab0e-18cca1b052d4', NULL, NULL)
+GO
+INSERT [dbo].[ApplicationUserRoles] ([UserId], [RoleId], [IdentityRole_Id], [ApplicationUser_Id]) VALUES (N'387b084e-5c18-4e0c-a664-c1ba504fb452', N'f1931d11-f3fe-49eb-8169-6ca6e9bd7f18', NULL, NULL)
+GO
+INSERT [dbo].[ApplicationUsers] ([Id], [FullName], [Address], [BirthDay], [Email], [EmailConfirmed], [PasswordHash], [SecurityStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEndDateUtc], [LockoutEnabled], [AccessFailedCount], [UserName]) VALUES (N'387b084e-5c18-4e0c-a664-c1ba504fb452', N'HauLe', NULL, CAST(N'2017-09-18T00:00:00.000' AS DateTime), N'lethehau90.vn@gmail.com', 1, N'ANNFOswLonKUGOSJH5rWf1gAFVcyT0RD49n1uyQuPBzrV8WdCiP9ztUuB0XZnKAnNQ==', N'ed3d6b4e-16cf-4b14-94fc-38648be44ff1', NULL, 0, 0, NULL, 0, 0, N'Hau')
+GO

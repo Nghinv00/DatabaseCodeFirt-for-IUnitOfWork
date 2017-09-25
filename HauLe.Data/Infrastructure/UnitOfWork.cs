@@ -1,4 +1,5 @@
-﻿using HauLe.Model.Model;
+﻿using HauLe.Model.DataModelEntity;
+using HauLe.Model.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,14 +11,14 @@ namespace HauLe.Data.Infrastructure
     public class UnitOfWork : IUnitOfWork
     {
         private readonly IDbFactory dbFactory;
-        private HauLeEntities dbContext;
+        private ApplicationDbContext dbContext;
 
         public UnitOfWork(IDbFactory dbFactory)
         {
             this.dbFactory = dbFactory;
         }
 
-        public HauLeEntities DbContext
+        public ApplicationDbContext DbContext
         {
             get { return dbContext ?? (dbContext = dbFactory.Init()); }
         }

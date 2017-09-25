@@ -2578,6 +2578,14 @@
       <Parameter Name="Active" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="spThongKe_Edit" ReturnType="Collection(HauLeModel.spThongKe_Edit_Result)" />
+    <EntitySet Name="ApplicationGroups" EntityType="HauLeModel.ApplicationGroup" />
+    <EntitySet Name="ApplicationRoleGroups" EntityType="HauLeModel.ApplicationRoleGroup" />
+    <EntitySet Name="ApplicationRoles" EntityType="HauLeModel.ApplicationRole" />
+    <EntitySet Name="ApplicationUserClaims" EntityType="HauLeModel.ApplicationUserClaim" />
+    <EntitySet Name="ApplicationUserGroups" EntityType="HauLeModel.ApplicationUserGroup" />
+    <EntitySet Name="ApplicationUserLogins" EntityType="HauLeModel.ApplicationUserLogin" />
+    <EntitySet Name="ApplicationUserRoles" EntityType="HauLeModel.ApplicationUserRole" />
+    <EntitySet Name="ApplicationUsers" EntityType="HauLeModel.ApplicationUser" />
   </EntityContainer>
   <ComplexType Name="Asp_Excell_GetBy_100DHMoiNhat_Result">
     <Property Type="Int32" Name="ID_Đơn_Hàng" Nullable="false" />
@@ -4097,4 +4105,86 @@
     <Property Type="Int64" Name="NamTruoc" Nullable="true" />
     <Property Type="Int64" Name="TatCa" Nullable="true" />
   </ComplexType>
+  <EntityType Name="ApplicationGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ApplicationRoleGroup">
+    <Key>
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ApplicationRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Discriminator" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ApplicationUserClaim">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicationUser_Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ApplicationUserGroup">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApplicationUserLogin">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LoginProvider" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicationUser_Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ApplicationUserRole">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="RoleId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IdentityRole_Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicationUser_Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ApplicationUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDay" Type="DateTime" Precision="3" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

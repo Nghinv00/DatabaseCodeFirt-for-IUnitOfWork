@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="51dbbf6d068b4bbe83e242aa179a502c" Name="Diagram1">
+        <EntityTypeShape EntityType="HauLeModel.ApplicationGroup" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HauLeModel.ApplicationRole" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HauLeModel.ApplicationUserClaim" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HauLeModel.ApplicationUserLogin" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="HauLeModel.ApplicationUserRole" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HauLeModel.ApplicationUser" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HauLeModel.Brand" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="HauLeModel.FK_dbo_ApplicationUserRoles_dbo_ApplicationRoles_IdentityRole_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="HauLeModel.FK_dbo_ApplicationUserClaim_dbo_ApplicationUsers_ApplicationUser_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="HauLeModel.FK_dbo_ApplicationUserLogins_dbo_ApplicationUsers_ApplicationUser_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="HauLeModel.FK_dbo_ApplicationUserRoles_dbo_ApplicationUsers_ApplicationUser_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="HauLeModel.ApplicationRoleGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="HauLeModel.ApplicationUserGroups" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

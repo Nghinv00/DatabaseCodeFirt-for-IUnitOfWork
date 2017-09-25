@@ -1,15 +1,16 @@
 ﻿
-using HauLe.Model.Model;
+using HauLe.Model.DataModelEntity;
+using HauLe.Model.Models;
 
 namespace HauLe.Data.Infrastructure
 {
     public class DbFactory : Disposable, IDbFactory
     {
-        private HauLeEntities dbContext;
+        private ApplicationDbContext dbContext;
 
-        public HauLeEntities Init()
+        public ApplicationDbContext Init()
         {
-            return dbContext ?? (dbContext = new HauLeEntities());
+            return dbContext ?? (dbContext = new ApplicationDbContext());
         }
 
         protected override void DisposeCore()

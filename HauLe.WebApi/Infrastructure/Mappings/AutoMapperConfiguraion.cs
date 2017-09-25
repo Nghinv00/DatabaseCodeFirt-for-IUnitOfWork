@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using HauLe.Model.Model;
+using HauLe.Model.Models;
 using HauLe.WebApi.Models;
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,9 @@ namespace HauLe.WebApi.Infrastructure.Mappings
             Mapper.Initialize(config =>
             {
                 config.CreateMap<Brand, BrandViewModel>();
+                config.CreateMap<ApplicationGroup, ApplicationGroupViewModel>();
+                config.CreateMap<ApplicationRole, ApplicationRoleViewModel>();
+                config.CreateMap<ApplicationUser, ApplicationUserViewModel>();
             });
         }
     }

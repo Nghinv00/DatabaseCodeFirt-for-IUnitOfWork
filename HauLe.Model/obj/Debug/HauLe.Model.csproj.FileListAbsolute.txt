@@ -8,3 +8,8 @@ E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\EntityFramework.SqlServer.x
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\obj\Debug\HauLe.Model.csproj.CoreCompileInputs.cache
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\obj\Debug\HauLe.Model.dll
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\obj\Debug\HauLe.Model.pdb
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\obj\Debug\HauLe.Model.csprojResolveAssemblyReference.cache
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

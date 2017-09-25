@@ -1,10 +1,11 @@
-﻿using HauLe.Model.Model;
+﻿using HauLe.Model.DataModelEntity;
+using HauLe.Model.Models;
 using System;
 
 namespace HauLe.Data.Infrastructure
 {
     public interface IDbFactory : IDisposable
     {
-        HauLeEntities Init();
+        ApplicationDbContext Init();
     }
 }

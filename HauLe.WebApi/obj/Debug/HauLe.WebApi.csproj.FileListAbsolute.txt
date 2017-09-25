@@ -128,3 +128,13 @@ E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.Owin.Host.SystemWeb.xm
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.Owin.Security.xml
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.Owin.Security.Cookies.xml
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.Owin.Security.OAuth.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.AspNet.Identity.Core.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.AspNet.Identity.Core.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.Owin.Security.Facebook.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.Owin.Security.Google.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.Owin.Security.Facebook.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.WebApi\bin\Microsoft.Owin.Security.Google.xml

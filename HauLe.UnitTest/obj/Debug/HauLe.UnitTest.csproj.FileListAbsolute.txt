@@ -17,3 +17,7 @@ E:\WEB MVC\ExampleDatabaseFirt\HauLe.UnitTest\obj\Debug\HauLe.UnitTest.dll
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.UnitTest\obj\Debug\HauLe.UnitTest.pdb
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.UnitTest\bin\Debug\EntityFramework.dll
 E:\WEB MVC\ExampleDatabaseFirt\HauLe.UnitTest\bin\Debug\EntityFramework.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WEB MVC\ExampleDatabaseFirt\HauLe.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.xml

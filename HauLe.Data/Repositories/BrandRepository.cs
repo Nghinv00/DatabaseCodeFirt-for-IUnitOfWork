@@ -1,5 +1,5 @@
 ﻿using HauLe.Data.Infrastructure;
-using HauLe.Model.Model;
+using HauLe.Model.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

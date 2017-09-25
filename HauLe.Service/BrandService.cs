@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HauLe.Model.Model;
+using HauLe.Model.Models;
 using HauLe.Data.Infrastructure;
 using HauLe.Data.Repositories;
 
